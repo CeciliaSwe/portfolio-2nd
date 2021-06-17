@@ -1,3 +1,5 @@
+
+/**Starts game and triggers randomisation of questions value and question category via further functions */
 function clickQuestion (event) {
     
     let selectDiv = document.getElementsByClassName('category');
@@ -14,13 +16,32 @@ function clickQuestion (event) {
     lightCategory(randomCategory);   
 }
 
-let questionButton = document.getElementById('question');
+/**Event listner for clicking the start game buttom */
+let questionButton = document.getElementById('button');
 questionButton.addEventListener('click', clickQuestion);
 
+/**Randomises a value for the current question and displays it */
 function questionValue()  {
-
+    let values = [10, 20, 50, 100];
+    let randomValue = Math.floor(Math.random() * values.length);
+    console.log(values[randomValue]);
+    alert(`The value of the question is ${values[randomValue]}.`);
+    document.getElementById("value").innerHTML = values[randomValue];
 }
 
+/**Randomised a questions category and lights up the category */
 function lightCategory(randomCategory) {
-    
+    if (randomCategory === 0) {
+        alert("Picked 1");
+        document.getElementById("c-1").style.backgroundColor = "orange";
+    } else if (randomCategory === 1) {
+        alert("Picked 2");
+        document.getElementById("c-2").style.backgroundColor = "orange";
+    } else if (randomCategory === 2) {
+        alert("Picked 3");
+        document.getElementById("c-3").style.backgroundColor = "orange";
+    } else if (randomCategory === 3) {
+        alert("Picked 4");
+        document.getElementById("c-4").style.backgroundColor = "orange";
+    };
 }

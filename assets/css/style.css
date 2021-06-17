@@ -1,0 +1,60 @@
+body {
+    color: #fff;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+#gridwrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 1680px;
+    margin: 0 auto;
+    position: relative;
+    grid-template-areas: 
+    "header header header header header header header header header header header header"
+    ". button button button . value value . question question question ."
+    ". button button button . category category . question question question ."
+    ". button button button . category category . option option option ."
+    ". . . result result result result result result . . ."
+    ". . . . .  footer footer . . . . .";
+}
+
+header {
+    grid-area: header;
+}
+
+button {
+    grid-area: button;  
+}
+
+#category-out {
+    grid-area: category;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#question-out {
+    grid-area: question;
+}
+
+#option-out {
+    grid-area: option;
+}
+
+#result-out {
+    grid-area: result;
+}
+
+#value {
+    grid-area: value;
+}
+
+footer {
+    grid-area: footer;
+}
+

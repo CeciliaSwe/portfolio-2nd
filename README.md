@@ -1,59 +1,129 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Portfolio Project 1 - Game of games (placeholder name)
+## Purpose
 
-Welcome USER_NAME,
+A kids quiz game with randomised question values and questions.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+This Website was created for the purpose of completing the second Portfolio for the Code Institute's Full Stack Developer course. It was built using the knowledge gained from the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. A full list of technologies used can be found in the technologies section of this document.
 
-## Gitpod Reminders
+A full list of technologies used can be found in the technologies section of this document. Note that GitHub as of March 2021 automatically creates a Table of Contents for the README file.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The live website can be found [here](https://ceciliaswe.github.io/portfolio-2nd/index.html)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## Game of games Responsive Website
 
-Another blue button should appear to click: _Open Browser_.
+![Website Mock Up]()
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+*** 
+## User Experience (UX)
+### User stories
 
-Another blue button should appear to click: _Open Browser_.
+As a user, I want to easily understand the main purpose of the site.
+As a user, I want to the game to be self explanatory
+As a user, I want to be able to start a game when I am ready.
+As a user, I want to know whether my guess was successful or not.
+As a user, I want to see my scores increase as I answer correctly.
+As a user, I want a way to start a new game when the current game has ended.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### The Strategy Plane
+### The Scope Plane
+### The Structure Plane
+### The Skeleton Plane
+#### Wireframes
+Wireframes created usig Balsamiq are uploaded to the assets folder - [View](https://github.com/CeciliaSwe/portfolio-1st/tree/master/wireframes_balsamiq)
+### The Surface Plane
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+#### Color Scheme
 
-## Updates Since The Instructional Video
+#### Imagery
+	
+#### Typography
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Differences to Design
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+##### Return to [top]
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Future features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+##### Return to [top]
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies
+### Languages used
+* HTML5
+	* This project uses HTML5 as the main language for content and structure of the Website.
+* CSS3
+	* This project uses CSS3 for Website styling
+* Javascript
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Frameworks, Libraries & Programs used
+* [Font Awesome](https://fontawesome.com/)
+	* Font awesome Icons are used 
+* [Google Fonts](https://fonts.google.com/)
+	* Google fonts are used throughout the project to import the relevant fonts
+* [GitHub](https://github.com/)
+	* GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+* [GitPod](https://gitpod.io/)
+	* GitPod is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+* [balsamiq Wireframes](https://balsamiq.com/wireframes/)
+	* Balsamiq was used to create wireframes and UX design during the planning and design process.
+* [Tiny JPG ](https://tinyjpg.com/)
+	* Tiny JPG was used to reduce image file size for the website.
+* [Am I Responsive?](http://ami.responsivedesign.is/)
+	* Used to generate the screenshots for responsive design.
+	
+##### Return to [top]
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Validation
+The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. 
+-   [W3C Markup Validator](https://validator.w3.org/nu/#textarea)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [JSHint](https://jshint.com/)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Fixed warnings and errors
 
----
 
-Happy coding!
+### User stories testing
+
+
+### Further Testing 					
+
+##### Return to [top]
+
+## Deployment
+### GitHub Pages
+
+The project was deployed to GitHub Pages through the below steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CeciliaSwe/portfolio-1st)
+2. Click the "Setting" button "Settings" Button.
+3. In the left menu, scroll down to "Pages".
+4. Under "Source", click the dropdown and select "Branch: master", then click "Save".
+5. Once deployed, the now published site [link](https://ceciliaswe.github.io/portfolio-2nd/) is found in the "Pages" section.
+
+##### Return to [top]
+
+## Credits
+### Images and videos
+
+
+### Code
+
+
+### Acknowledgements
+
+
+
+##### Return to [top]
+
+
+

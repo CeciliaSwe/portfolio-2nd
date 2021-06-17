@@ -29,11 +29,24 @@ As a user, I want a way to start a new game when the current game has ended.
 
 ### The Strategy Plane
 ### The Scope Plane
+* Page Heading - A page heading that has a clear caption what the page is about.
+* An interactive quiz.
+* A button to start the game
+* Randomised question value and question category
+* Correct Guesses increments score by the value of the questions.
+* Restart Game button.
+* Error messages with incorrect guesses - removing 1 life (of 3).
+
 ### The Structure Plane
 ### The Skeleton Plane
 #### Wireframes
-Wireframes created usig Balsamiq are uploaded to the assets folder - [View](https://github.com/CeciliaSwe/portfolio-1st/tree/master/wireframes_balsamiq)
+Wireframes created usig Balsamiq are uploaded to the assets folder - [View](https://github.com/CeciliaSwe/portfolio-2nd/assets/images/Wireframe_P2_.pdf)
+
+Game consists of:
+(1) Large start-button initiating the game, (2) randomising the questions value, (3)the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions have been displayed.
+
 ### The Surface Plane
+
 
 ### Design
 

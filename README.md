@@ -3,7 +3,7 @@
 
 A kids quiz game with randomised question values and questions.
 
-This Website was created for the purpose of completing the second Portfolio for the Code Institute's Full Stack Developer course. It was built using the knowledge gained from the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. A full list of technologies used can be found in the technologies section of this document.
+This Website was created for the purpose of completing the second Portfolio for the Code Institute's Full Stack Developer course. It was built using the knowledge gained from the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. 
 
 A full list of technologies used can be found in the technologies section of this document. Note that GitHub as of March 2021 automatically creates a Table of Contents for the README file.
 
@@ -51,6 +51,7 @@ Game consists of:
 ### Design
 
 #### Color Scheme
+The start game button and lit up gategories uses complimentary colors (orange and blue). The lives uses intuitive red and green for strikes left / questions wrong.
 
 #### Imagery
 	

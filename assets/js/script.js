@@ -40,6 +40,25 @@ function clickQuestion (event) {
 let questionButton = document.getElementById('button');
 questionButton.addEventListener('click', clickQuestion);
 
+//Shuffles array according to Fisher-Yates https://bost.ocks.org/mike/shuffle/
+function shuffle(quiz) {
+    var currentIndex = quiz.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [quiz[currentIndex], quiz[randomIndex]] = [
+        quiz[randomIndex], quiz[currentIndex]];
+    }
+  
+    return quiz;
+  }
+
 //Randomises a value for the current question and displays it in the value section
 function questionValue()  {
     let values = [10, 20, 50, 100];

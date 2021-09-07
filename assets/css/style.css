@@ -32,7 +32,6 @@ body {
         grid-auto-rows: minmax(100px, auto);
         grid-gap: 15px;
         max-width: 960px;
-        
         margin: 0 auto;
         position: relative;
         grid-template-areas: 
@@ -84,8 +83,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 #q-out {
@@ -127,9 +125,6 @@ footer {
     border-radius: 5px;
     width: 70%;
     margin-top: 5px;
-    
-  ;
-
 }
 
 .option-box {
@@ -156,8 +151,7 @@ button {
     box-sizing: border-box;
     background-color: red;
     border-radius: 6px;
-    height: auto;
-    
+    height: auto;  
 }
 
 .strike {

@@ -1,47 +1,49 @@
 
-/**Starts game and triggers randomisation of questions value and question category via further functions */
+
+// Uses event listner to initialize the quiz and run applicable functions
 function clickQuestion (event) {
-    
+
     let selectDiv = document.getElementsByClassName('category');
     let classLength = selectDiv.length;
-    alert("There are "+classLength+" category classes in the html code");
+      
+    /*alert("There are "+classLength+" category classes in the html code");*/
+    //Randomizes a category(number) from available ones
     let randomCategory = Math.floor(Math.random() * selectDiv.length);
-    console.log(randomCategory, selectDiv[randomCategory]);
+    
+    /*console.log(randomCategory, selectDiv[randomCategory]);
     console.log(randomCategory);
     console.log('Received the ' + event.type + " event!");
     console.log('"this" currently refers to', this.id);
-    console.log('You clicked the button!\n');
+    console.log('You clicked the button!\n');*/
+      
+      questionValue();
+      lightCategory(randomCategory);   
+      displayQ(randomCategory);
+  }
 
-    questionValue();
-    lightCategory(randomCategory);   
-}
-
-/**Event listner for clicking the start game buttom */
+//Event listner for clicking the start game buttom
 let questionButton = document.getElementById('button');
 questionButton.addEventListener('click', clickQuestion);
 
-/**Randomises a value for the current question and displays it */
+//Randomises a value for the current question and displays it in the value section
 function questionValue()  {
     let values = [10, 20, 50, 100];
     let randomValue = Math.floor(Math.random() * values.length);
-    console.log(values[randomValue]);
-    alert(`The value of the question is ${values[randomValue]}.`);
+    /*console.log(values[randomValue]);
+    alert(`The value of the question is ${values[randomValue]}.`);*/
     document.getElementById("value").innerHTML = values[randomValue];
 }
 
-/**Randomised a questions category and lights up the category */
+//Lights up the randomised category 
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
-        alert("Picked 1");
+        /*alert("Picked 1");*/
         document.getElementById("c-1").style.backgroundColor = "orange";
     } else if (randomCategory === 1) {
-        alert("Picked 2");
+        /*alert("Picked 2");*/
         document.getElementById("c-2").style.backgroundColor = "orange";
     } else if (randomCategory === 2) {
-        alert("Picked 3");
+        /*alert("Picked 3");*/
         document.getElementById("c-3").style.backgroundColor = "orange";
-    } else if (randomCategory === 3) {
-        alert("Picked 4");
-        document.getElementById("c-4").style.backgroundColor = "orange";
     };
 }

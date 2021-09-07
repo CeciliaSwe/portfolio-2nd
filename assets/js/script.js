@@ -125,9 +125,9 @@ function checkAnswer(event) {
   compare();
   clear();
   incrementStrike();
-  show();
-  hide();
-  toggle();
+  blinkOn();
+  blinkOff();
+  onOff();
  }
 
  //get the value of the checked radiobutton to compare to correct answer and increment results
@@ -146,6 +146,31 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
       document.getElementById("incorrect").innerHTML++; 
     }
 } 
+
+//Clears to prep for next question
+function clear() {
+
+};
+
+//Visually Indicates how many incorrect answers
+function incrementStrike() {
+    
+};
+
+// blink "on" state
+function blinkOn() {
+    
+};
+
+//blink "off" state
+function blinkOff() {
+    
+};
+
+//Execute blink function
+function onOff() {
+    
+};
 
 
 

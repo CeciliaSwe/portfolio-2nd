@@ -34,7 +34,7 @@ function questionValue()  {
     document.getElementById("value").innerHTML = values[randomValue];
 }
 
-//Lights up the randomised category 
+//Lights up the randomised category based on index number
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked 1");*/

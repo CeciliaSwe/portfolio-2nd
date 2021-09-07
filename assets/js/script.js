@@ -172,9 +172,7 @@ function onOff() {
     
 };
 
-
-
- let submitAnswer = document.getElementById("submit-answer");
- submitAnswer.addEventListener('click', checkAnswer); // left clicks*/
+let submitAnswer = document.getElementById("submit-answer");
+submitAnswer.addEventListener('click', checkAnswer); // left clicks*/
 
 //all OK until here!

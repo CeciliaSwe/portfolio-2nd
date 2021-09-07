@@ -1,3 +1,18 @@
+//Declare variables to display question, options, results and current questions index
+let quizContainer = document.getElementById("q-out");
+let resultsContainer = document.getElementById("r-out");
+let optionText1 = document.getElementById("option-1");
+let optionText2 = document.getElementById("option-2");
+let optionText3 = document.getElementById("option-3");
+let correctAnswer = "";
+let posA = 0;
+let posB = 0;
+let posC = 0;
+
+//Filter out questions from a specific category
+let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
+let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
+let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
 
 
 // Uses event listner to initialize the quiz and run applicable functions

@@ -81,3 +81,7 @@ function lightCategory(randomCategory) {
         document.getElementById("c-3").style.backgroundColor = "orange";
     };
 }
+
+//Runs check answer function when clicking the submit button
+let submitAnswer = document.getElementById("submit-answer");
+ submitAnswer.addEventListener('click', checkAnswer); 

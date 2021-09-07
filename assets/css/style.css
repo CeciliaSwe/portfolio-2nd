@@ -131,6 +131,7 @@ footer {
     display: flex;
     background-color: #ff1e0A;
     border-radius: 6px;
+    border: 2px solid hsl(219, 59%, 31%);
 }
 
 .option-box:hover {

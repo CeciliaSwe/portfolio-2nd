@@ -2,8 +2,10 @@ body {
     color: #fff;
     font-family: 'Arial';
     text-align: center;
+    height: 100%;
 }
-  
+
+    
 #gridwrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -21,9 +23,36 @@ body {
     ". . . . .  footer footer . . . . .";
 }
 
+
+@media screen and (max-width: 760px){
+
+    #gridwrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 15px;
+        max-width: 960px;
+        
+        margin: 0 auto;
+        position: relative;
+        grid-template-areas: 
+        "header header "
+        "wheel wheel"
+        "category category"
+        "question question"
+        "option option"
+        "result result"
+        "footer footer"
+        ;
+    }
+
 }
 
-
+#gridwrap > * {
+    background: grey;
+    padding: 20px;
+    
+}
 
 #grid {
     display: grid;
@@ -46,7 +75,7 @@ header {
 }
 
 button {
-    grid-area: button;  
+    grid-area: wheel;  
 }
 
 #c-out {
@@ -98,6 +127,7 @@ footer {
     border-radius: 5px;
     width: 70%;
     margin-top: 5px;
+    
   ;
 
 }

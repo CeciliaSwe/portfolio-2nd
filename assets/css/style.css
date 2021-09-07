@@ -88,11 +88,50 @@ footer {
     align-items: center;
 }
 
-#button {
-    font-size: 15rem;
+#question {
+    font-size: 7rem;
 }
 
 .category {
-    border: 2px solid red;
-    padding: 15px;
+    border: 3px solid #1338be;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 5px;
+  ;
+
+}
+
+.option-box {
+    display: flex;
+    background-color: red;
+    border-radius: 6px;
+}
+
+.option-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+
+.option-prefix, .option-text {
+    color: whitesmoke;
+    margin-right: 1rem;
+    justify-content: space-around;
+}
+
+button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: red;
+    border-radius: 6px;
+    height: auto;
+    
+}
+
+.strike {
+    background-color: green;
+    padding: 20px;
+    margin: 0;
 }

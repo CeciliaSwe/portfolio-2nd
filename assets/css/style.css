@@ -120,7 +120,7 @@ footer {
 }
 
 .category {
-    border: 3px solid #1338be;
+    border: 3px solid hsl(219, 59%, 31%);
     padding: 1rem;
     border-radius: 5px;
     width: 70%;
@@ -129,7 +129,7 @@ footer {
 
 .option-box {
     display: flex;
-    background-color: red;
+    background-color: #ff1e0A;
     border-radius: 6px;
 }
 
@@ -155,7 +155,7 @@ button {
 }
 
 .strike {
-    background-color: green;
+    background-color: #51703b;
     padding: 20px;
     margin: 0;
 }

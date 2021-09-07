@@ -52,16 +52,16 @@ function questionValue() {
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked 1")*/
-        document.getElementById("c-1").style.backgroundColor = "orange";
+        document.getElementById("c-1").style.backgroundColor = "#ffd301";
+        document.getElementById("c-1").style.color = "hsl(219, 59%, 31%)";
     } else if (randomCategory === 1) {
         /*alert("Picked 2");*/
-        document.getElementById("c-2").style.backgroundColor = "orange";
+        document.getElementById("c-2").style.backgroundColor = "#ffd301";
+        document.getElementById("c-2").style.color = "hsl(219, 59%, 31%)";
     } else if (randomCategory === 2) {
         /*alert("Picked 3");*/
-        document.getElementById("c-3").style.backgroundColor = "orange";
-    } else if (randomCategory === 3) {
-        /*alert("Picked 4");*/
-        document.getElementById("c-4").style.backgroundColor = "orange";
+        document.getElementById("c-3").style.backgroundColor = "#ffd301";
+        document.getElementById("c-3").style.color = "hsl(219, 59%, 31%)";
     };
     
 }

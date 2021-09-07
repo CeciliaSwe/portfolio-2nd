@@ -1,9 +1,20 @@
+//Declares variables for displaying question and options
 let quizContainer = document.getElementById("q-out");
 let resultsContainer = document.getElementById("r-out");
 let optionText1 = document.getElementById("option-1");
 let optionText2 = document.getElementById("option-2");
 let optionText3 = document.getElementById("option-3");
 let correctAnswer = "";
+
+//Filter out questions from a specific category
+let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
+let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
+let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
+
+//Declares variables for question index for each category
+let posA = 0;
+let posB = 0;
+let posC = 0;
 
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
@@ -28,6 +39,7 @@ function clickQuestion (event) {
 let questionButton = document.getElementById('question');
 questionButton.addEventListener('click', clickQuestion); // left clicks
 
+//Randomised a value from the array and displays in the value section
 function questionValue() {
     let values = [10, 20, 50, 100];
     let randomValue = Math.floor(Math.random() * values.length);
@@ -36,6 +48,7 @@ function questionValue() {
     document.getElementById("value").innerHTML = values[randomValue];
 }
 
+//Changes background color for the randomised category
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked 1")*/
@@ -53,9 +66,41 @@ function lightCategory(randomCategory) {
     
 }
 
+//Displays questions from randomised category and increments question index for next round
+function displayQ(randomCategory) {
+    if (randomCategory === 0) {
+        /*alert("Picked Pokemon");*/
+        console.log(quizCatA[posA]);
+        quizContainer.innerText = quizCatA[posA].question;
+        optionText1.innerText = quizCatA[posA].choice1;
+        optionText2.innerText = quizCatA[posA].choice2;
+        optionText3.innerText = quizCatA[posA].choice3;
+        correctAnswer = (quizCatA[posA].answer);
+        posA++;
+    } else if (randomCategory === 1) {
+        /*alert("Picked Minecraft");*/
+        console.log(quizCatB[posB]);
+        quizContainer.innerText = quizCatB[posB].question;
+        optionText1.innerText = quizCatB[posB].choice1;
+        optionText2.innerText = quizCatB[posB].choice2;
+        optionText3.innerText = quizCatB[posB].choice3;
+        correctAnswer = (quizCatB[posB].answer);
+        posB++;
+    } else if (randomCategory === 2) {
+        /*alert("Picked Maths");*/
+        console.log(quizCatC[posC]);
+        quizContainer.innerText = quizCatC[posC].question;
+        optionText1.innerText = quizCatC[posC].choice1;
+        optionText2.innerText = quizCatC[posC].choice2;
+        optionText3.innerText = quizCatC[posC].choice3;
+        correctAnswer = (quizCatC[posC].answer);
+        posC++;
+    } else {
+        /*alert("Not defined yet");*/
+    }
+  };  
 
-//Shuffles array according to Fisher-Yates https://bost.ocks.org/mike/shuffle/
-
+//Shuffles quiz array according to Fisher-Yates https://bost.ocks.org/mike/shuffle/
 function shuffle(quiz) {
   var currentIndex = quiz.length,  randomIndex;
 
@@ -75,25 +120,24 @@ function shuffle(quiz) {
 }
 
 
-//Filter out questions from a specific category
-let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
-let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
-let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
-let posA = 0;
-let posB = 0;
-let posC = 0;
-
-
-
-// compares chosen answer with correct answer and increments score or strikes
+// Compares chosen answer with correct answer and increments score or strikes
 function checkAnswer(event) {
-  //get the value of the checked radiobutton to compare to correct answer and increment results
-  let currentAnswer = document.querySelector('input[name="test"]:checked').value;
+  compare();
+  clear();
+  incrementStrike();
+  show();
+  hide();
+  toggle();
+ }
+
+ //get the value of the checked radiobutton to compare to correct answer and increment results
+function compare() {
+let currentAnswer = document.querySelector('input[name="test"]:checked').value;
   let currentScore = parseInt(resultsContainer.innerHTML);
   let addedScore = parseInt(document.getElementById("value").innerHTML);
   let incorrect = parseInt(document.getElementById("incorrect").innerHTML);
 
-  //
+  
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
     alert("WOOP you did it");
     resultsContainer.innerText = currentScore + addedScore;
@@ -101,48 +145,9 @@ function checkAnswer(event) {
       alert("NAH")
       document.getElementById("incorrect").innerHTML++; 
     }
+} 
 
-    clear();
-    incrementStrike();
-    show();
-    hide();
-    toggle();
- }
 
- 
-
- function displayQ(randomCategory) {
-  if (randomCategory === 0) {
-      /*alert("Picked Pokemon");*/
-      console.log(quizCatA[posA]);
-      quizContainer.innerText = quizCatA[posA].question;
-      optionText1.innerText = quizCatA[posA].choice1;
-      optionText2.innerText = quizCatA[posA].choice2;
-      optionText3.innerText = quizCatA[posA].choice3;
-      correctAnswer = (quizCatA[posA].answer);
-      posA++;
-  } else if (randomCategory === 1) {
-      /*alert("Picked Minecraft");*/
-      console.log(quizCatB[posB]);
-      quizContainer.innerText = quizCatB[posB].question;
-      optionText1.innerText = quizCatB[posB].choice1;
-      optionText2.innerText = quizCatB[posB].choice2;
-      optionText3.innerText = quizCatB[posB].choice3;
-      correctAnswer = (quizCatB[posB].answer);
-      posB++;
-  } else if (randomCategory === 2) {
-      /*alert("Picked Maths");*/
-      console.log(quizCatC[posC]);
-      quizContainer.innerText = quizCatC[posC].question;
-      optionText1.innerText = quizCatC[posC].choice1;
-      optionText2.innerText = quizCatC[posC].choice2;
-      optionText3.innerText = quizCatC[posC].choice3;
-      correctAnswer = (quizCatC[posC].answer);
-      posC++;
-  } else {
-      /*alert("Not defined yet");*/
-  }
-};  
 
  let submitAnswer = document.getElementById("submit-answer");
  submitAnswer.addEventListener('click', checkAnswer); // left clicks*/

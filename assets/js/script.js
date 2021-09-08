@@ -189,11 +189,8 @@ function incrementStrike() {
     
 } else if (incorrect === 4) {
   alert(`GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`);
- window.location.href="gameover.html";
-    
-} else {
-   
-}
+  gameoverRedirect()
+} 
 };  
   
 
@@ -216,6 +213,11 @@ function onOff() {
  }
 }
 
+//Redirects to separate html upon game over
+function gameoverRedirect() {
+  window.location.href="gameover.html"
+  
+}
 
 
 

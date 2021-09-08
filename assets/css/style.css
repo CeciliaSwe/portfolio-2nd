@@ -23,6 +23,19 @@ body {
     ". . . . .  footer footer . . . . .";
 }
 
+#gridwrap-gameover {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 1680px;
+    margin: 0 auto;
+    position: relative;
+    grid-template-areas: 
+    ". . ."
+    ". gameover ."
+    ". gameover-text .";
+}
+
 
 @media screen and (max-width: 760px){
 
@@ -116,6 +129,14 @@ footer {
     align-items: center;
 }
 
+#gameover {
+    grid-area: gameover;
+}
+
+#gameover-text {
+    grid-area: gameover-text;
+}
+
 
 .category {
     border: 3px solid hsl(219, 59%, 31%);
@@ -167,4 +188,11 @@ footer {
 
 #incorrect {
     color: grey
+}
+
+#gameover, #gameover-text{
+    background-color: #ff1e0A;
+    height: 25vh;
+    width: 75vw;
+
 }

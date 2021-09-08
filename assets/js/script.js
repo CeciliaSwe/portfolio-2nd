@@ -149,7 +149,25 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
 
 //Clears to prep for next question
 function clear() {
+  // Clears lit category back to grey
+  document.getElementById("c-1").style.backgroundColor = "grey";
+  document.getElementById("c-2").style.backgroundColor = "grey";
+  document.getElementById("c-3").style.backgroundColor = "grey";
+  document.getElementById("c-1").style.color = "white";
+  document.getElementById("c-2").style.color = "white";
+  document.getElementById("c-3").style.color = "white";
+  
 
+  // Clears the radiobuttons
+  Array.from( document.querySelectorAll('input[name="test"]:checked'), input => input.checked = false );
+
+  //Clear question
+  quizContainer.innerText = "QUESTION";
+  optionText1.innerText = "";
+  optionText2.innerText = "";
+  optionText3.innerText = "";
+  document.getElementById("question").innerText = "Next";
+  document.getElementById("value").innerText = "Value"
 };
 
 //Visually Indicates how many incorrect answers

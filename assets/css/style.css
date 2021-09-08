@@ -92,6 +92,7 @@ button {
 
 #o-out {
     grid-area: option;
+   
     
 }
 
@@ -132,6 +133,10 @@ footer {
     background-color: #ff1e0A;
     border-radius: 6px;
     border: 2px solid hsl(219, 59%, 31%);
+    padding: 8px;
+    
+    
+    justify-content: center;
 }
 
 .option-box:hover {
@@ -144,6 +149,7 @@ footer {
     color: whitesmoke;
     margin-right: 1rem;
     justify-content: space-around;
+    
 }
 
 button {

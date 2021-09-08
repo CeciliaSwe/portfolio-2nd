@@ -51,7 +51,7 @@ Game consists of:
 ### Design
 
 #### Color Scheme
-The start game button and lit up gategories uses complimentary colors (orange and blue). The lives uses intuitive red and green for strikes left / questions wrong.
+Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow and blue are used for the question button, categories and question / options sections.
 
 #### Imagery
 	
@@ -131,6 +131,7 @@ The project was deployed to GitHub Pages through the below steps:
 
 
 ### Code
+The quiz is shuffled according to Fisher-Yates https://bost.ocks.org/mike/shuffle/.
 
 
 ### Acknowledgements

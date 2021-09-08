@@ -172,8 +172,29 @@ function clear() {
 
 //Visually Indicates how many incorrect answers
 function incrementStrike() {
+  let incorrect = parseInt(document.getElementById("incorrect").innerHTML);
+
+  if (incorrect === 1) {
+    document.getElementById("strike-1").style.backgroundColor = "red";
+    document.getElementById("strike-1").innerHTML = "X";
     
-};
+} else if (incorrect === 2) {
+  document.getElementById("strike-2").style.backgroundColor = "red";
+  document.getElementById("strike-2").innerHTML = "X";
+   
+} else if (incorrect === 3) {
+  alert("One more strike and you´re our buddy...")
+  document.getElementById("strike-3").style.backgroundColor = "red";
+  document.getElementById("strike-3").innerHTML = "X";
+    
+} else if (incorrect === 4) {
+  alert(`GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`);
+    
+} else {
+   
+}
+};  
+  
 
 // blink "on" state
 function blinkOn() {

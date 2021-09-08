@@ -189,6 +189,7 @@ function incrementStrike() {
     
 } else if (incorrect === 4) {
   alert(`GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`);
+  window.location.href = "https://ceciliaswe.github.io/portfolio-2nd/gameover.html"
     
 } else {
    

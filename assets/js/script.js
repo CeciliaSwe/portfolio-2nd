@@ -197,19 +197,26 @@ function incrementStrike() {
   
 
 // blink "on" state
-function blinkOn() {
-    
-};
-
-//blink "off" state
-function blinkOff() {
-    
-};
-
-//Execute blink function
+function blinkOn()
+{
+  document.getElementById("question").style.backgroundColor = "#ffd301";
+}
+// blink "off" state
+function blinkOff()
+{
+  document.getElementById("question").style.backgroundColor = "grey";
+}
+//Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
 function onOff() {
-    
-};
+ for(var i=700; i < 4000; i=i+700)
+ {
+   setTimeout("blinkOn()",i);
+   setTimeout("blinkOff()",i+350);
+ }
+}
+
+
+
 
 let submitAnswer = document.getElementById("submit-answer");
 submitAnswer.addEventListener('click', checkAnswer); // left clicks*/

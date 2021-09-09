@@ -51,7 +51,7 @@ Game consists of:
 ### Design
 
 #### Color Scheme
-Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow and blue are used for the question button, categories and question / options sections.
+Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow, blue and orange are used for the question button, categories and question / options sections.
 
 #### Imagery
 	
@@ -88,10 +88,11 @@ Being a kids game, the color scheme chosen are shades of the base colors. They b
 	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
 * [balsamiq Wireframes](https://balsamiq.com/wireframes/)
 	* Balsamiq was used to create wireframes and UX design during the planning and design process.
-* [Tiny JPG ](https://tinyjpg.com/)
-	* Tiny JPG was used to reduce image file size for the website.
 * [Am I Responsive?](http://ami.responsivedesign.is/)
 	* Used to generate the screenshots for responsive design.
+* [Favicon](https://favicon.io/)
+	* Used to generate the questionmark favicon
+
 	
 ##### Return to [top]
 

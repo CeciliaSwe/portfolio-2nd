@@ -160,6 +160,7 @@ function clear() {
   document.getElementById("c-1").style.color = "white";
   document.getElementById("c-2").style.color = "white";
   document.getElementById("c-3").style.color = "white";
+  document.getElementById("button-start").style.backgroundColor = "orange";
   
 
   // Clears the radiobuttons
@@ -170,7 +171,7 @@ function clear() {
   optionText1.innerText = "";
   optionText2.innerText = "";
   optionText3.innerText = "";
-  document.getElementById("question").innerText = "Next";
+  document.getElementById("button-start").innerText = "Next";
   document.getElementById("value").innerText = "Value"
 };
 
@@ -201,12 +202,12 @@ function incrementStrike() {
 // blink "on" state
 function blinkOn()
 {
-  document.getElementById("question").style.backgroundColor = "#ffd301";
+  document.getElementById("button-start").style.backgroundColor = "grey";
 }
 // blink "off" state
 function blinkOff()
 {
-  document.getElementById("question").style.backgroundColor = "grey";
+  document.getElementById("button-start").style.backgroundColor = "orange";
 }
 //Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
 function onOff() {
@@ -225,7 +226,7 @@ function gameoverRedirect() {
 
 
 
-let submitAnswer = document.getElementById("submit-answer");
+let submitAnswer = document.getElementById("button-submit");
 submitAnswer.addEventListener('click', checkAnswer); // left clicks*/
 
 //all OK until here!

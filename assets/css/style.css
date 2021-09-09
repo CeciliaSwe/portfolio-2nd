@@ -160,7 +160,7 @@ footer {
 }
 
 .option-prefix, .option-text {
-    color: dimgrey;
+    color: #333333;
     margin-right: 1rem;
     justify-content: space-around;
     
@@ -174,7 +174,7 @@ footer {
     border-radius: 6px;
     height: auto;  
     font-size: 7rem;
-    color: dimgrey;
+    color: #333333;
 }
 
 #button-start:hover {
@@ -201,7 +201,9 @@ footer {
 
 /* https://www.w3schools.com/css/css3_gradients.asp */
 #header-title {
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue);
+    color: #333333;
+    font-size: 3rem;
 }
 
 #button-submit {
@@ -213,7 +215,7 @@ footer {
     height: auto;  
     margin: 0 auto;
     font-size: 1rem;
-    color: dimgrey;
+    color: #333333;
     padding: 3px;
 }
 

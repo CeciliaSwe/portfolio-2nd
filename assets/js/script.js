@@ -36,7 +36,7 @@ function clickQuestion (event) {
     displayQ(randomCategory);
 }
   
-let questionButton = document.getElementById('question');
+let questionButton = document.getElementById('button-start');
 questionButton.addEventListener('click', clickQuestion); // left clicks
 
 //Randomised a value from the array and displays in the value section
@@ -52,16 +52,16 @@ function questionValue() {
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked 1")*/
-        document.getElementById("c-1").style.backgroundColor = "#ffd301";
-        document.getElementById("c-1").style.color = "hsl(219, 59%, 31%)";
+        document.getElementById("c-1").style.backgroundColor = "orange";
+        document.getElementById("c-1").style.color = "blue";
     } else if (randomCategory === 1) {
         /*alert("Picked 2");*/
-        document.getElementById("c-2").style.backgroundColor = "#ffd301";
-        document.getElementById("c-2").style.color = "hsl(219, 59%, 31%)";
+        document.getElementById("c-2").style.backgroundColor = "orange";
+        document.getElementById("c-2").style.color = "blue";
     } else if (randomCategory === 2) {
         /*alert("Picked 3");*/
-        document.getElementById("c-3").style.backgroundColor = "#ffd301";
-        document.getElementById("c-3").style.color = "hsl(219, 59%, 31%)";
+        document.getElementById("c-3").style.backgroundColor = "orange";
+        document.getElementById("c-3").style.color = "blue";
     };
     
 }

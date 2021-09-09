@@ -16,9 +16,9 @@ body {
     position: relative;
     grid-template-areas: 
     "header header header header header header header header header header header header"
-    ". wheel wheel wheel . value value . question question question ."
-    ". wheel wheel wheel . category category . option option option ."
-    ". wheel wheel wheel . category category . option option option ."
+    ". start start start . value value . question question question ."
+    ". start start start . category category . option option option ."
+    ". start start start . category category . option option option ."
     ". . . result result result result result result . . ."
     ". . . . .  footer footer . . . . .";
 }
@@ -49,7 +49,7 @@ body {
         position: relative;
         grid-template-areas: 
         "header header "
-        "wheel wheel"
+        "start start"
         "category category"
         "question question"
         "option option"
@@ -87,7 +87,7 @@ header {
 }
 
 button {
-    grid-area: wheel;  
+    grid-area: start;  
 }
 
 #c-out {
@@ -139,7 +139,7 @@ footer {
 
 
 .category {
-    border: 3px solid hsl(219, 59%, 31%);
+    border: 3px solid blue;
     padding: 1rem;
     border-radius: 5px;
     width: 70%;
@@ -148,9 +148,9 @@ footer {
 
 .option-box {
     display: flex;
-    background-color: #ff1e0A;
+    background-color: yellow;
     border-radius: 6px;
-    border: 2px solid hsl(219, 59%, 31%);
+    border: 2px solid blue;
     padding: 8px;
     
     
@@ -164,24 +164,30 @@ footer {
 }
 
 .option-prefix, .option-text {
-    color: whitesmoke;
+    color: dimgrey;
     margin-right: 1rem;
     justify-content: space-around;
     
 }
 
-#question {
+#button-start {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    background-color: #ffd301;
+    background-color:orange;
     border-radius: 6px;
     height: auto;  
     font-size: 7rem;
+    color: dimgrey;
+}
+
+#button-start:hover {
+    cursor: pointer;
+    font-size: 8rem;
 }
 
 .strike {
-    background-color: #51703b;
+    background-color: green;
     padding: 20px;
     margin: 0;
 }
@@ -196,3 +202,9 @@ footer {
     width: 75vw;
 
 }
+
+/* https://www.w3schools.com/css/css3_gradients.asp */
+#header-title {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
+}
+

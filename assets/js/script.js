@@ -7,9 +7,9 @@ let optionText3 = document.getElementById("option-3");
 let correctAnswer = "";
 
 //Filter out questions from a specific category
-let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
-let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
-let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
+
+
+
 
 //Declares variables for question index for each category
 let posA = 0;
@@ -70,6 +70,7 @@ function lightCategory(randomCategory) {
 function displayQ(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked Pokemon");*/
+        let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
         console.log(quizCatA[posA]);
         quizContainer.innerText = quizCatA[posA].question;
         optionText1.innerText = quizCatA[posA].choice1;
@@ -79,6 +80,7 @@ function displayQ(randomCategory) {
         posA++;
     } else if (randomCategory === 1) {
         /*alert("Picked Minecraft");*/
+        let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
         console.log(quizCatB[posB]);
         quizContainer.innerText = quizCatB[posB].question;
         optionText1.innerText = quizCatB[posB].choice1;
@@ -88,6 +90,7 @@ function displayQ(randomCategory) {
         posB++;
     } else if (randomCategory === 2) {
         /*alert("Picked Maths");*/
+        let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
         console.log(quizCatC[posC]);
         quizContainer.innerText = quizCatC[posC].question;
         optionText1.innerText = quizCatC[posC].choice1;

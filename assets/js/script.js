@@ -66,7 +66,8 @@ function lightCategory(randomCategory) {
     
 }
 
-//Displays questions from randomised category and increments question index for next round
+//Filters out questions from the shuffled quiz 
+// Displays questions from randomised category and increments question index for next round
 function displayQ(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked Pokemon");*/

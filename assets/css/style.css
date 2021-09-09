@@ -137,7 +137,6 @@ footer {
     grid-area: gameover-text;
 }
 
-
 .category {
     border: 3px solid blue;
     padding: 1rem;
@@ -147,18 +146,15 @@ footer {
 }
 
 .option-box {
-    display: flex;
     background-color: yellow;
     border-radius: 6px;
     border: 2px solid blue;
     padding: 8px;
-    
-    
-    justify-content: center;
+    margin: 8px auto;
+    width: 50%;
 }
 
 .option-box:hover {
-    cursor: pointer;
     transform: scale(1.02);
     transition: transform 100ms;
 }
@@ -206,5 +202,24 @@ footer {
 /* https://www.w3schools.com/css/css3_gradients.asp */
 #header-title {
     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
+}
+
+#button-submit {
+    display: block;
+    width: 25%;
+    box-sizing: border-box;
+    background-color:yellow;
+    border-radius: 6px;
+    height: auto;  
+    margin: 0 auto;
+    font-size: 1rem;
+    color: dimgrey;
+    padding: 3px;
+}
+
+#button-submit:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+
 }
 

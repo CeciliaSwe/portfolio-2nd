@@ -100,7 +100,7 @@ function displayQ(randomCategory) {
 
 //Shuffles quiz array according to Fisher-Yates https://bost.ocks.org/mike/shuffle/
 function shuffle(quiz) {
-  var currentIndex = quiz.length,  randomIndex;
+  let currentIndex = quiz.length,  randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
@@ -192,7 +192,6 @@ function incrementStrike() {
 } 
 };  
   
-
 // blink "on" state
 function blinkOn()
 {
@@ -205,20 +204,12 @@ function blinkOff()
 }
 //Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
 function onOff() {
- for(var i=700; i < 4000; i=i+700)
+ for(let i=700; i < 4000; i=i+700)
  {
    setTimeout("blinkOn()",i);
    setTimeout("blinkOff()",i+350);
  }
 }
-
-//Redirects to separate html upon game over
-function gameoverRedirect() {
-  window.location.href="gameover.html"
-  
-}
-
-
 
 let submitAnswer = document.getElementById("button-submit");
 submitAnswer.addEventListener('click', checkAnswer); // left clicks*/

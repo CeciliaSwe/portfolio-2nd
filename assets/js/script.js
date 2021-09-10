@@ -6,16 +6,10 @@ let optionText2 = document.getElementById("option-2");
 let optionText3 = document.getElementById("option-3");
 let correctAnswer = "";
 
-//Filter out questions from a specific category
-
-
-
-
 //Declares variables for question index for each category
 let posA = 0;
 let posB = 0;
 let posC = 0;
-
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {
@@ -194,7 +188,7 @@ function incrementStrike() {
     
 } else if (incorrect === 4) {
   alert(`GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`);
-  gameoverRedirect()
+  gameoverPopup();
 } 
 };  
   
@@ -230,3 +224,20 @@ let submitAnswer = document.getElementById("button-submit");
 submitAnswer.addEventListener('click', checkAnswer); // left clicks*/
 
 //all OK until here!
+
+function gameoverPopup() {
+let modal = document.getElementById("modal-gameover");
+let displayScore = document.getElementById("popup");
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+modal.style.display = "block";
+displayScore.innerText = `GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+};
+

@@ -193,11 +193,8 @@ function incrementStrike() {
   document.getElementById("strike-2").innerHTML = "X";
    
 } else if (incorrect === 3) {
-  alert("One more strike and you´re our buddy...")
   document.getElementById("strike-3").style.backgroundColor = "red";
   document.getElementById("strike-3").innerHTML = "X";
-    
-} else if (incorrect === 4) {
   gameoverPopup();
 } 
 };  
@@ -260,7 +257,6 @@ function alldonePopup() {
 
 function checkLength() {
 if ((posA >= quizCatA.length) || (posB >= quizCatB.length) || (posC >= quizCatC.length)) {
-  alert("no more questions in this category!");
   alldonePopup();
 }
 

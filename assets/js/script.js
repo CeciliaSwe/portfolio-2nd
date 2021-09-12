@@ -6,13 +6,17 @@ let optionText2 = document.getElementById("option-2");
 let optionText3 = document.getElementById("option-3");
 let correctAnswer = "";
 
+let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
+let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
+let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
+
 //Declares variables for question index for each category
 let posA = 0;
 let posB = 0;
 let posC = 0;
 
 //Declares variable for checking if there are questions left in the quiz
-let posTotal = 10;
+let posTotal = 0;
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {
@@ -68,7 +72,7 @@ function lightCategory(randomCategory) {
 function displayQ(randomCategory) {
     if (randomCategory === 0) {
         /*alert("Picked Pokemon");*/
-        let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
+        
         console.log(quizCatA[posA]);
         quizContainer.innerText = quizCatA[posA].question;
         optionText1.innerText = quizCatA[posA].choice1;
@@ -79,7 +83,7 @@ function displayQ(randomCategory) {
         posTotal++;
     } else if (randomCategory === 1) {
         /*alert("Picked Minecraft");*/
-        let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
+        
         console.log(quizCatB[posB]);
         quizContainer.innerText = quizCatB[posB].question;
         optionText1.innerText = quizCatB[posB].choice1;
@@ -90,7 +94,7 @@ function displayQ(randomCategory) {
         posTotal++;
     } else if (randomCategory === 2) {
         /*alert("Picked Maths");*/
-        let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
+        
         console.log(quizCatC[posC]);
         quizContainer.innerText = quizCatC[posC].question;
         optionText1.innerText = quizCatC[posC].choice1;
@@ -129,6 +133,7 @@ function checkAnswer(event) {
   compare();
   clear();
   incrementStrike();
+  checkLength(quiz);
   blinkOn();
   blinkOff();
   onOff();
@@ -238,9 +243,17 @@ span.onclick = function() {
 
 };
 
-function checkLength(quiz) {
-  if (posTotal >= quiz.length) {
-    
-    alert("no more questions!");  
-} 
+function checkLength() {
+  /*if (posA >= quizCatA.length) {
+  alert("no more questions catA!");  
+} else if (posB >= quizCatB.length) {
+  alert("no more questions catB!");  
+} else if (posC>= quizCatC.length) {
+  alert("no more questions catC!");  
+};*/
+if ((posA >= quizCatA.length) || (posB >= quizCatB.length) || (posC >= quizCatC.length)) {
+  alert("no more questions in this category!");
 }
+
+}
+

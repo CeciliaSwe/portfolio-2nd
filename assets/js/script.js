@@ -148,10 +148,10 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
 
   
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
-    alert("WOOP you did it");
+    /*alert("WOOP you did it");*/
     resultsContainer.innerText = currentScore + addedScore;
     } else{
-      alert("NAH")
+      /*alert("NAH")*/
       document.getElementById("incorrect").innerHTML++; 
     }
 } 
@@ -198,7 +198,6 @@ function incrementStrike() {
   document.getElementById("strike-3").innerHTML = "X";
     
 } else if (incorrect === 4) {
-  alert(`GAME OVER! Your total score is ${parseInt(resultsContainer.innerHTML)}.`);
   gameoverPopup();
 } 
 };  
@@ -243,16 +242,26 @@ span.onclick = function() {
 
 };
 
+function alldonePopup() {
+  let modal = document.getElementById("modal-alldone");
+  let displayScore = document.getElementById("popup2");
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[1];
+  
+  modal.style.display = "block";
+  displayScore.innerText = `ALL DONE! we have no more questions for you, your total score is ${parseInt(resultsContainer.innerHTML)}. Well done!`
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  };
+
 function checkLength() {
-  /*if (posA >= quizCatA.length) {
-  alert("no more questions catA!");  
-} else if (posB >= quizCatB.length) {
-  alert("no more questions catB!");  
-} else if (posC>= quizCatC.length) {
-  alert("no more questions catC!");  
-};*/
 if ((posA >= quizCatA.length) || (posB >= quizCatB.length) || (posC >= quizCatC.length)) {
   alert("no more questions in this category!");
+  alldonePopup();
 }
 
 }

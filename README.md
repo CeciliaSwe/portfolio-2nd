@@ -17,7 +17,19 @@ The live website can be found [here](https://ceciliaswe.github.io/portfolio-2nd/
 
 *** 
 ## User Experience (UX)
-### User stories
+
+
+
+### The Strategy Plane
+This website was created to showcase my knowledge of HTML, CSS & JavaScript and to provide users with some entertainment in the form of an online quiz game featuring. The game should be intuitive, simple to interact with and give feedback to the user.
+
+Site Goals:
+
+To showcase my skille in HTML, CSS and JavaScript.
+To provide users with an interactive game to play.
+To create an fun, interactive game that makes the user want to stay and play, and also return to the website.
+
+#### User stories
 
 As a user, I want to easily understand the main purpose of the site.
 As a user, I want to the game to be self explanatory
@@ -27,15 +39,17 @@ As a user, I want to see my scores increase as I answer correctly.
 As a user, I want a way to start a new game when the current game has ended.
 
 
-### The Strategy Plane
 ### The Scope Plane
+
+Planned features: 
+
 * Page Heading - A page heading that has a clear caption what the page is about.
 * An interactive quiz.
-* A button to start the game
-* Randomised question value and question category
-* Correct Guesses increments score by the value of the questions.
-* Restart Game button.
-* Error messages with incorrect guesses - removing 1 life (of 3).
+* A button to start the game.
+* Randomised question value and question category.
+* Correct guesses increments score by the randomised value of the questions.
+* Restart Game button when the site user is either Game over or has exhaused all questions in a category.
+* Visual display of incorrect guesses - removing 1 life (of 3).
 
 ### The Structure Plane
 ### The Skeleton Plane
@@ -43,7 +57,7 @@ As a user, I want a way to start a new game when the current game has ended.
 Wireframes created usig Balsamiq are uploaded to the assets folder - [View](https://github.com/CeciliaSwe/portfolio-2nd/assets/images/Wireframe_P2_.pdf)
 
 Game consists of:
-(1) Large start-button initiating the game, (2) randomising the questions value, (3)the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions have been displayed.
+(1) Large start-button initiating the game, (2) randomising the questions value, (3) randomising the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions in a category have been displayed.
 
 ### The Surface Plane
 
@@ -54,6 +68,7 @@ Game consists of:
 Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow, blue and orange are used for the question button, categories and question / options sections.
 
 #### Imagery
+No physical images will be used on the site.
 	
 #### Typography
 
@@ -64,6 +79,8 @@ Being a kids game, the color scheme chosen are shades of the base colors. They b
 ## Features
 
 ### Future features
+* A larger set of quiz questions and categories.
+* Introduction of game modes "Easy" or "Hard" to adjust question difficulty to suit different ages.
 
 ##### Return to [top]
 
@@ -97,6 +114,7 @@ Being a kids game, the color scheme chosen are shades of the base colors. They b
 ##### Return to [top]
 
 ## Testing
+Testing is required on the JavaScript quiz game created for Portfolio Project 2. All features and user stories documented in the README are to be tested.
 
 ### Validation
 The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. 

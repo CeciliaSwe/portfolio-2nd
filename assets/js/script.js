@@ -11,6 +11,9 @@ let posA = 0;
 let posB = 0;
 let posC = 0;
 
+//Declares variable for checking if there are questions left in the quiz
+let posTotal = 10;
+
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {
   let selectDiv = document.getElementsByClassName('category');
@@ -73,6 +76,7 @@ function displayQ(randomCategory) {
         optionText3.innerText = quizCatA[posA].choice3;
         correctAnswer = (quizCatA[posA].answer);
         posA++;
+        posTotal++;
     } else if (randomCategory === 1) {
         /*alert("Picked Minecraft");*/
         let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
@@ -83,6 +87,7 @@ function displayQ(randomCategory) {
         optionText3.innerText = quizCatB[posB].choice3;
         correctAnswer = (quizCatB[posB].answer);
         posB++;
+        posTotal++;
     } else if (randomCategory === 2) {
         /*alert("Picked Maths");*/
         let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
@@ -93,6 +98,7 @@ function displayQ(randomCategory) {
         optionText3.innerText = quizCatC[posC].choice3;
         correctAnswer = (quizCatC[posC].answer);
         posC++;
+        posTotal++;
     } else {
         /*alert("Not defined yet");*/
     }
@@ -232,3 +238,9 @@ span.onclick = function() {
 
 };
 
+function checkLength(quiz) {
+  if (posTotal >= quiz.length) {
+    
+    alert("no more questions!");  
+} 
+}

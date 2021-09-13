@@ -46,7 +46,7 @@ function questionValue() {
     let randomValue = Math.floor(Math.random() * values.length);
     console.log(values[randomValue]);
     /*alert(`The value of the question is ${values[randomValue]}.`);*/
-    document.getElementById("value").innerHTML = values[randomValue];
+    document.getElementById("value-display").innerHTML = values[randomValue];
 }
 
 //Changes background color for the randomised category

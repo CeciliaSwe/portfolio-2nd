@@ -209,6 +209,12 @@ footer {
     margin: 8px auto;
     width: 50%;
     height: 50px;
+    
+}
+
+.option-text {
+    font-size: 1.3rem;
+
 }
 
 .option-box:hover {

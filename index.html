@@ -8,19 +8,26 @@
     <title>Game of games</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
-
+    <header id="header-title">
+        <div id="header-text">Game of games</div>
+    </header>
     <div id="gridwrap">
-
-        <header id="header-title">Game of games
-
-        </header>
         <button id="button-start">Start</button>
-        <section id="q-out">Question</section>
-        <section id="o-out">
+        <div id="value">
+            <p>Question value:</p>
+            <p id="value-display">Value</p>
+        </div>
+        <div id="c-out">
+            <h3>Category</h3>
+            <div class="category" id="c-1">Pokemon</div>
+            <div class="category" id="c-2">Minecraft</div>
+            <div class="category" id="c-3">Maths</div>
+        </div>
+        <div id="q-out">Question</div>
+        <div id="o-out">
             <form action="">
                 <div class="option-box">
                     <input type="radio" id="radio1" name="test" value="1">
@@ -33,33 +40,20 @@
                 <div class="option-box">
                     <input type="radio" id="radio3" name="test" value="3">
                     <label for="radio3" class="option-text" id="option-3">Option 3</label>
+                </div>
+                <input type="button" id="button-submit" value="Submit">
             </form>
+        </div>
+        <div id="r-out">0</div>
+        <div id="i-out">
+            <div id="incorrect">0</div>
+            <div class="strike" id="strike-1">3</div>
+            <div class="strike" id="strike-2">2</div>
+            <div class="strike" id="strike-3">1</div>
+        </div>
     </div>
-    <input type="button" id="button-submit" value="Submit">
-    </section>
-    <section id="r-out">0</section>
-    <section id="value">
-        <p>Question value:</p>
-        <p id="value-display">Value</p>
-    </section>
-    <section id="c-out"> 
-        <h3>Category</h3>
-        <div class="category" id="c-1">Pokemon</div>
-        <div class="category" id="c-2">Minecraft</div>
-        <div class="category" id="c-3">Maths</div>
-    </section>
-    <footer>
-        <div id="incorrect">0</div>
-        <div class="strike" id="strike-1">3</div>
-        <div class="strike" id="strike-2">2</div>
-        <div class="strike" id="strike-3">1</div>
-    </footer>
-    </div>
-
-
     <!-- The Modal popup for game over-->
     <div id="modal-gameover" class="modal">
-
         <!-- Modal content -->
         <div class="popup-content">
             <div class="popup-header">
@@ -75,12 +69,9 @@
                 </a>
             </div>
         </div>
-
     </div>
-
     <!-- The Modal popup when game runs out of questions in a category-->
     <div id="modal-alldone" class="modal">
-
         <!-- Modal content -->
         <div class="popup-content">
             <div class="popup-header">
@@ -96,9 +87,7 @@
                 </a>
             </div>
         </div>
-
     </div>
-
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

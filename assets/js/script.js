@@ -143,15 +143,15 @@ function checkAnswer(event) {
 function compare() {
 let currentAnswer = document.querySelector('input[name="test"]:checked').value;
   let currentScore = parseInt(resultsContainer.innerHTML);
-  let addedScore = parseInt(document.getElementById("value").innerHTML);
+  let addedScore = parseInt(document.getElementById("value-display").innerHTML);
   let incorrect = parseInt(document.getElementById("incorrect").innerHTML);
 
   
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
-    /*alert("WOOP you did it");*/
+    alert("WOOP you did it");
     resultsContainer.innerText = currentScore + addedScore;
-    } else{
-      /*alert("NAH")*/
+    } else {
+      alert("NAH")
       document.getElementById("incorrect").innerHTML++; 
     }
 } 
@@ -177,7 +177,7 @@ function clear() {
   optionText2.innerText = "";
   optionText3.innerText = "";
   document.getElementById("button-start").innerText = "Next";
-  document.getElementById("value").innerText = "Value"
+  document.getElementById("value-display").innerText = "Value"
 };
 
 //Visually Indicates how many incorrect answers

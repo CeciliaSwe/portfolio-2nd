@@ -1,5 +1,5 @@
 //Declares variables for displaying question and options
-let quizContainer = document.getElementById("q-out");
+let quizContainer = document.getElementById("q-display");
 let resultsContainer = document.getElementById("r-out");
 let optionText1 = document.getElementById("option-1");
 let optionText2 = document.getElementById("option-2");

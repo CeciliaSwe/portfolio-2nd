@@ -124,6 +124,9 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 
 #### Fixed warnings and errors
 
+- Button element cannot be descendant of anchor element and vice versa, resolved by wrapping anchor element in a div instead and style as a button (for modal "Play again").
+- All duplicate ids removed
+
 
 ### User stories testing
 

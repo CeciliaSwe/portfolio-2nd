@@ -23,12 +23,12 @@ body {
     grid-template-areas: 
 
     ". . . . . . . . . . . ."
-    ". . . . . . . . . . . ."
     ". start start start . value value . question question question ."
     ". start start start . category category . option option option ."
     ". start start start . category category . option option option ."
     ". start start start . category category . option option option ."
-    ". . . result result result result result result . . ."
+    ". . . . . . . . . . . ."
+    ". . . . result result result result . . . ."
     ". . . . .  strikes strikes . . . . ."
     ". . . . . . . . . . . ."
     ". . . . . . . . . . . .";
@@ -81,8 +81,22 @@ body {
 
 
 
+
 #button-start {
     grid-area: start;  
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:orange;
+    border-radius: 6px;
+    height: auto;  
+    font-size: 7rem;
+    color: #333333;
+}
+
+#button-start:hover {
+    cursor: pointer;
+    font-size: 8rem;
 }
 
 #c-out {
@@ -100,24 +114,26 @@ body {
     background-color: grey;
     border-radius: 6px;
     border: 3px solid yellow;
-    padding: 8px;
+    padding: 0px;
     width: 100%;
     color: #fefefe;
-    font-size: 2rem;
     margin: auto;
-    min-height: 100px;
+    height: auto;
     
 
 }
 
 #o-out {
     grid-area: option;
-   
     
 }
 
 #r-out {
     grid-area: result;
+    border: 3px solid green;
+    border-radius: 6px;
+    padding: 0px;
+    height: auto;
 }
 
 #value {
@@ -130,13 +146,13 @@ body {
     color: #fefefe;
     border-radius: 6px;
     height: auto;
-    font-size: 1.5rem;
+    
     
     
 }
 
 #value p {
-    font-size: 2rem;
+    
     margin: auto;
     
 }
@@ -207,7 +223,7 @@ body {
 }
 
 .option-text {
-    font-size: 1.3rem;
+    
 
 }
 
@@ -222,21 +238,7 @@ body {
     justify-content: space-around;
 }
 
-#button-start {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background-color:orange;
-    border-radius: 6px;
-    height: auto;  
-    font-size: 7rem;
-    color: #333333;
-}
 
-#button-start:hover {
-    cursor: pointer;
-    font-size: 8rem;
-}
 
 .strike {
     background-color: green;
@@ -277,7 +279,7 @@ body {
 }
 
 #button-submit:hover {
-    font-size: 1.2rem;
+    
     cursor: pointer;
 
 }

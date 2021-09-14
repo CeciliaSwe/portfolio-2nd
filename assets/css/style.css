@@ -6,10 +6,7 @@ body {
     background: #4d4d4d;
     margin: 0;
 }
-
-
-
-    
+  
 #gridwrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -30,7 +27,7 @@ body {
     ". start start start . category category . option option option ."
     ". start start start . category category . option option option ."
     ". . . . . . . . . . . ."
-    ". . . . result result result result . . . ."
+    ". . . . score score score score. . . ."
     ". . . . .  strikes strikes . . . . ."
     ". . . . . . . . . . . ."
     ". . . . . . . . . . . .";
@@ -121,7 +118,7 @@ body {
 }
 
 #score-box {
-    grid-area: result;
+    grid-area: score;
     border: 3px solid green;
     border-radius: 6px;
     padding: 0px;

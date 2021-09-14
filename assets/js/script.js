@@ -1,5 +1,5 @@
 //Declares variables for displaying question and options
-let quizContainer = document.getElementById("q-display");
+let quizContainer = document.getElementById("question-display");
 let resultsContainer = document.getElementById("score-display");
 let optionText1 = document.getElementById("option-1");
 let optionText2 = document.getElementById("option-2");
@@ -17,6 +17,23 @@ let posC = 0;
 
 //Declares variable for checking if there are questions left in the quiz
 let posTotal = 0;
+
+
+function runRules() {
+  let modal = document.getElementById("modal-rules");
+  
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[2];
+  
+  modal.style.display = "block";
+  
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+}
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {

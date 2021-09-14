@@ -7,6 +7,8 @@ body {
     margin: 0;
 }
 
+
+
     
 #gridwrap {
     display: grid;
@@ -92,7 +94,7 @@ body {
     font-size: 8rem;
 }
 
-#c-out {
+#category-box {
     grid-area: category;
     display: flex;
     flex-direction: column;
@@ -101,7 +103,7 @@ body {
     text-transform: uppercase;  
 }
 
-#q-out {
+#question-box {
     display: block;
     grid-area: question;
     background-color: grey;
@@ -114,11 +116,11 @@ body {
     height: 9vh;
 }
 
-#o-out {
+#option-box-outer{
     grid-area: option;  
 }
 
-#r-out {
+#score-box {
     grid-area: result;
     border: 3px solid green;
     border-radius: 6px;
@@ -126,7 +128,7 @@ body {
     height: auto;
 }
 
-#value {
+#value-box {
     grid-area: value;
     display: block;
     width: 100%;
@@ -141,7 +143,7 @@ body {
 
 
 
-#i-out {
+#strike-box {
     grid-area: strikes;
     display: flex;
     flex-direction: row;
@@ -190,7 +192,7 @@ p {
     font-size: 1.2rem;
 }
 
-#q-display {
+#question-display {
     padding: 1.6rem;
 }
 

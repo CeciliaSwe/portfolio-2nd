@@ -292,14 +292,13 @@ p {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-auto-rows: minmax(25px, auto);
-            grid-gap: 15px;
+            grid-gap: 25px;
             max-width: 90%;
             margin: 0 auto;
             position: relative;
             grid-template-areas: 
             ". . . . . . . . . . . ."
             ". . . . start start start start . . . ."
-            ". . . . . . . . . . . ."
             "category category category category category category category category category category category category"
             ". . . . value value value value . . . ."
             ". question question question question question . option option option option ."
@@ -311,6 +310,7 @@ p {
 
         #button-start {  
             font-size: 4rem;
+            height: 15vh;
         }
 
         #button-start:hover {
@@ -333,15 +333,14 @@ p {
         }
     
         #question-box {
-            display: block;
-            grid-area: question;
-            background-color: grey;
-            border-radius: 6px;
-            border: 3px solid yellow;
-            padding: 0px;
-            width: 100%;
-            color: #fefefe;
-            margin: auto;
             height: 90%;
+        }
+
+        #button-submit {
+            width: 75%; 
+        }
+
+        #score-box {
+           margin-top: 3vh;
         }
     }

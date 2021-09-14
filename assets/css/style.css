@@ -291,19 +291,35 @@ p {
         #gridwrap {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: minmax(100px, auto);
+            grid-auto-rows: minmax(25px, auto);
             grid-gap: 15px;
             max-width: 90%;
             margin: 0 auto;
             position: relative;
             grid-template-areas: 
+            ". . . . . . . . . . . ."
             ". . . . start start start start . . . ."
+            ". . . . . . . . . . . ."
             "category category category category category category category category category category category category"
             ". . . . . value value . . . . ."
             ". . question question question . . option option option . ."
             ". . . . score score score score . . . ."
             ". . . . . strikes strikes . . . . ."
+            " . . . . . . . . . . . ."
             ;
+        }
+
+        #button-start {  
+            font-size: 4rem;
+        }
+
+        #category-box {
+           flex-direction: row;
+           margin: 0 1rem;   
+        }
+
+        h3 {
+            display: none;
         }
     
     }

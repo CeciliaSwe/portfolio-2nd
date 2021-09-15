@@ -6,6 +6,17 @@ body {
     background: #4d4d4d;
     margin: 0;
 }
+
+/* https://www.w3schools.com/css/css3_gradients.asp */
+#header-title {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue);
+    color: #333333;
+    font-size: 4vw;
+    text-transform: uppercase;
+    height: 10vh;
+    margin-bottom: 1vh;
+    padding-top: 3vh; 
+}
   
 #gridwrap {
     display: grid;
@@ -23,7 +34,7 @@ body {
 
     ". . . . . . . . . . . ."
     ". start start start . value value . question question question ."
-    ". start start start . category category . . . . ."
+    ". start start start . category category . question question question  ."
     ". start start start . category category . option option option ."
     ". start start start . category category . option option option ."
     ". . . . . category category . option option option ."
@@ -65,12 +76,37 @@ body {
     font-size: 7.5vw;
 }
 
+#value-box {
+    grid-area: value;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid green;
+    color: #fefefe;
+    border-radius: 6px; 
+}
+
+#value-box div, #score-box div {
+    font-size: 1.4vw;
+}
+
+.category {
+    border: 3px solid blue;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 85%;
+    margin-top: 5px;
+    font-size: 1.5vw;
+}
+
 #category-box {
     grid-area: category;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-transform: uppercase;  
 }
 
@@ -84,11 +120,52 @@ body {
     width: 100%;
     color: #fefefe;
     margin: auto;
-    height: 9vh;
+    height: auto;
+}
+
+#question-display {
+    padding: 1.6rem;
+    font-size: 1.5vw;
 }
 
 #option-box-outer{
     grid-area: option;  
+}
+
+.option-box {
+    background-color: yellow;
+    border-radius: 6px;
+    border: 2px solid blue;
+    padding: 8px;
+    margin: 8px auto;
+    width: 75%;
+    height: 4vh; 
+}
+
+.option-box:hover {
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+
+.option-prefix, .option-text {
+    color: #333333;
+    font-size: 1.5vw;
+}
+
+#button-submit {
+    display: block;
+    width: 40%;
+    background-color:yellow;
+    border-radius: 6px;
+    height: auto;  
+    margin: 0 auto;
+    font-size: 1vw;
+    color: #333333;
+    padding: 3px;
+}
+
+#button-submit:hover {
+    cursor: pointer;
 }
 
 #score-box {
@@ -105,29 +182,7 @@ body {
 
 #score-display, #value-display {
     margin-left: 0.5vw;
-    font-weight: bolder;
 }
-
-#value-box {
-    grid-area: value;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: grey;
-    border: 3px solid green;
-    color: #fefefe;
-    border-radius: 6px;
-    height: auto;  
-}
-
-#value-box div, #score-box div {
-    font-size: 1.1vw;
-}
-
-
 
 #strike-box {
     grid-area: strikes;
@@ -135,6 +190,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.strike {
+    background-color: green;
+    border: 2px solid darkgreen;
+    padding: 20px;
+    margin: 0;
+    font-size: 1vw;
 }
 
 #gameover {
@@ -168,91 +231,9 @@ body {
     grid-area: gameover-text;
 }
 
-p {
-    padding: 0.5rem;
-    margin: 0 auto;
-    font-size: 1vw;
-}
-
-#question-display {
-    padding: 1.6rem;
-    font-size: 1.5vw;
-}
-
-.category {
-    border: 3px solid blue;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 75%;
-    margin-top: 5px;
-    font-size: 1.5vw;
-}
-
-.option-box {
-    background-color: yellow;
-    border-radius: 6px;
-    border: 2px solid blue;
-    padding: 8px;
-    margin: 8px auto;
-    width: 50%;
-    height: 50px; 
-}
-
-.option-text {
-}
-
-.option-box:hover {
-    transform: scale(1.02);
-    transition: transform 100ms;
-}
-
-.option-prefix, .option-text {
-    color: #333333;
-    margin-right: 1rem;
-    justify-content: space-around;
-    font-size: 1.5vw;
-}
-
-.strike {
-    background-color: green;
-    padding: 20px;
-    margin: 0;
-    font-size: 1vw;
-}
-
 #incorrect {
     color: grey
 }
-
-
-/* https://www.w3schools.com/css/css3_gradients.asp */
-#header-title {
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue);
-    color: #333333;
-    font-size: 4vw;
-    text-transform: uppercase;
-    height: 10vh;
-    margin-bottom: 1vh;
-    padding-top: 4vh; 
-}
-
-#button-submit {
-    display: block;
-    width: 25%;
-    box-sizing: border-box;
-    background-color:yellow;
-    border-radius: 6px;
-    height: auto;  
-    margin: 0 auto;
-    font-size: 1vw;
-    color: #333333;
-    padding: 3px;
-}
-
-#button-submit:hover {
-    cursor: pointer;
-}
-
 
 /* The Modal (background) */
 .modal {

@@ -165,10 +165,10 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
 
   
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
-    alert("WOOP you did it");
+    /*alert("WOOP you did it");*/
     resultsContainer.innerText = currentScore + addedScore;
     } else {
-      alert("NAH")
+      /*alert("NAH")*/
       document.getElementById("incorrect").innerHTML++; 
     }
 } 

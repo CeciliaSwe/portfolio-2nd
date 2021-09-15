@@ -389,7 +389,7 @@ body {
         }
     }
 
-    @media screen and (max-width: 340px){
+    @media only screen and (max-width: 340px){
 
         #gridwrap {
             display: grid;

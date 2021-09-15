@@ -28,7 +28,7 @@ body {
     ". start start start . category category . option option option ."
     ". . . . . category category . option option option ."
     ". . . . . . . . . . . ."
-    ". . . . score score score score. . . ."
+    ". . . . . score score . . . . ."
     ". . . . .  strikes strikes . . . . ."
     ". . . . . . . . . . . .";
 }
@@ -97,23 +97,37 @@ body {
     border-radius: 6px;
     padding: 0px;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-#score-display {
-    font-size: 2vw;
+#score-display, #value-display {
+    margin-left: 0.5vw;
+    font-weight: bolder;
 }
 
 #value-box {
     grid-area: value;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     box-sizing: border-box;
     background-color: grey;
-    border: 3px solid orange;
+    border: 3px solid green;
     color: #fefefe;
     border-radius: 6px;
     height: auto;  
 }
+
+#value-box div, #score-box div {
+    font-size: 1.1vw;
+}
+
+
 
 #strike-box {
     grid-area: strikes;
@@ -142,7 +156,7 @@ body {
     color: #333333;
     text-decoration: none;
     margin-top: 5vh;
-    padding-top: 8vh;;  
+    padding-top: 8vh; 
 }
 
 #gameover-button:hover {

@@ -291,10 +291,17 @@ body {
   
     @media screen and (max-width: 768px){
 
+        #header-title {
+            font-size: 7vw;
+            height: 8vh;
+            margin-bottom: 3vh;
+            padding-top: 1vh; 
+        }
+
         #gridwrap {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: 9.5%;
+            grid-auto-rows: auto;
             grid-gap: 5px;
             max-width: 90%;
             margin: 0 auto;
@@ -308,43 +315,36 @@ body {
             ". question question question question question . option option option option ."
             ". question question question question question . option option option option ."
             ". . . . score score score score . . . ."
-            ". . . . score score score score . . . ."
             ". . . . . strikes strikes . . . . ."
             ". . . . . . . . . . . ."
-            
-            
-           
             ;
         }
 
         #button-start {  
-            font-size: 7vw;
+            font-size: 6vw;
             height: 15vh;
             margin-top: 1vh;
         }
 
         #button-start:hover {
             cursor: pointer;
-            font-size: 7.5vw;
+            font-size: 6.5vw;
         }
 
         #category-box {
            flex-direction: row;
-           margin: 0 1rem;   
+           justify-content: space-between;
+           margin: 0 1vw;   
+        }
+
+        .category {
+            font-size: 2.5vw;
         }
 
         #value-box {
-            margin-top: 0.5vh;
-        }
-
-        h3 {
-            display: none;
-        }
-
-        p {
-            padding: 0.5rem;
-            margin: 0 auto;
-            font-size: 2vw;
+            width: auto;
+            height: 5vh;
+            padding: 0.5vw;
         }
 
         .option-box {
@@ -352,26 +352,40 @@ body {
             height: auto; 
         }
 
-        #option-box-outer{
-            margin-top: 3vh;  
+        .option-prefix, .option-text {
+        
+            font-size: 2.5vw;
         }
 
-    
         #question-box {
-            height: 90%;
+            height: auto;
             margin-top: 3vh;
+        }
+
+        #question-display {
+            font-size: 2.5vw;
         }
 
         #button-submit {
             width: 75%; 
+            height: 4vh;
+            font-size: 1.5vw
         }
 
         #score-box {
-           margin-top: 7vh;
+           height: 5vh;
+        }
+
+        #value-box div, #score-box div {
+            font-size: 2.5vw;
         }
 
         #score-display {
             font-size: 4vw;
+        }
+
+        .strike {
+            font-size: 1.5vw;
         }
     }
 

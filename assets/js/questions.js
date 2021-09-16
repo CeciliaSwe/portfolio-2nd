@@ -1,7 +1,7 @@
 //Quiz questions
 let quiz = [
     {
-        question: "How many starter Pokemons can you choose from?",
+        question: "How many starter Pokemons are there?",
         choice1: "1",
         choice2: "3",
         choice3: "5",

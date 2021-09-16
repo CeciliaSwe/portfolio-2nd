@@ -1,6 +1,6 @@
 body {
     color: #fff;
-    font-family: "Glory";
+    font-family: "Glory", sans-serif;
     text-align: center;
     height: 100%;
     background: #4d4d4d;
@@ -515,18 +515,11 @@ body {
                 "option option option option option option option option"
                 ". score score score score score score ."
                 " . . . strikes strikes . . ."
-               
                 ;
-            }
-
-            #strike-box {
-                margin-bottom: 2vh;
-            }
-
-
-
-            
         }
-            
+
+        #strike-box {
+                margin-bottom: 2vh;
+        }
 
     }

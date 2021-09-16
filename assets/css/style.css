@@ -399,7 +399,7 @@ body {
         #gridwrap {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            grid-auto-rows: 7.5%;
+            grid-auto-rows: auto;
             grid-gap: 10px;
             max-width: 90%;
             max-height: 70vh;
@@ -410,11 +410,12 @@ body {
             ". . start start start start . ."
             ". category category category category category category ."
             ". . value value value value . ."
+            ". . . . . . . ."
             "question question question question question question question question"
             "option option option option option option option option"
             "option option option option option option option option"
             "option option option option option option option option"
-            "option option option option option option option option"
+            
             ". score score score score score score ."
             " . . . strikes strikes . . ."
            
@@ -424,6 +425,7 @@ body {
         #button-start {  
             font-size: 6vw;
             height: auto;
+            margin-top: 2vh;
         }
 
         #button-start:hover {
@@ -448,6 +450,7 @@ body {
             width: auto;
             height: auto;
             padding: 0.5rem;
+            border: 2px solid green
         }
 
         #value-box div, #score-box div {
@@ -468,11 +471,13 @@ body {
             height: auto;
             width: 90%;
             margin: 0 auto;
+            border: 2px solid yellow;
         }
         
         #question-display {
             padding: 0;
             font-size: 4.5vw;
+            margin-top: 0.8vh;
         }
 
         #button-submit {
@@ -481,12 +486,13 @@ body {
         }
 
         #score-box {
-           width: 100%
+           width: 100%;
+           border: 2px solid green;
         }
 
          #strike-box {
             height: 2vh;
-            margin-top: 1vh;
+            margin-bottom: 1vh;
         }
 
         .strike {
@@ -495,4 +501,32 @@ body {
             margin-top: 0.3rem;
             font-size: 3vw;
         }
+    }
+
+    @media screen and (max-width: 320px){
+        #gridwrap {
+            grid-gap: 5px;
+            grid-template-areas: 
+                
+                ". . start start start start . ."
+                ". category category category category category category ."
+                ". . value value value value . ."
+                "question question question question question question question question"
+                "option option option option option option option option"
+                ". score score score score score score ."
+                " . . . strikes strikes . . ."
+               
+                ;
+            }
+
+            #strike-box {
+                margin-bottom: 2vh;
+            }
+
+
+
+            
+        }
+            
+
     }

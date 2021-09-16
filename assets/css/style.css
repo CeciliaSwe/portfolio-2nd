@@ -288,6 +288,16 @@ body {
     padding: 2px 16px;
     color: #333333;
     }
+
+    #footer-text {
+        padding: 1vw;
+    }
+
+a {
+   text-decoration: none;
+   color: #fefefe;
+   font-size: 1vw;
+}
   
     @media screen and (max-width: 768px){
 

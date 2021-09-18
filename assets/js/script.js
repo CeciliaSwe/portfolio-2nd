@@ -143,7 +143,7 @@ function checkAnswer(event) {
   clear();
   incrementStrike();
   checkLength(quiz);
-  setTimeout(onOff, 1500);
+  setTimeout(onOff, 1300);
  }
 
  //get the value of the checked radiobutton to compare to correct answer and increment results

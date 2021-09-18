@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
   shuffle(quizCatA);
   shuffle(quizCatB);
   shuffle(quizCatC);
+  screenSize();
 });
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
@@ -289,3 +290,9 @@ function onOffScore() {
  }
 }
 
+function screenSize() {
+  if (window.screen.width <= 320) {
+    let modal = document.getElementById("modal-screen-size");
+    modal.style.display = "block"; 
+  }
+}

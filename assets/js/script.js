@@ -142,9 +142,7 @@ function checkAnswer(event) {
   clear();
   incrementStrike();
   checkLength(quiz);
-  blinkOn();
-  blinkOff();
-  onOff();
+  setTimeout(onOff, 2500);
  }
 
  //get the value of the checked radiobutton to compare to correct answer and increment results
@@ -158,6 +156,7 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
     /*alert("WOOP you did it");*/
     resultsContainer.innerText = currentScore + addedScore;
+    onOffScore();
     } else {
       /*alert("NAH")*/
       document.getElementById("incorrect").innerHTML++; 
@@ -269,3 +268,24 @@ if ((posA >= quizCatA.length) || (posB >= quizCatB.length) || (posC >= quizCatC.
 }
 
 }
+
+// blink "on" state
+function blinkOnScore()
+{
+  document.getElementById("score-box").style.backgroundColor = "green";
+  
+}
+// blink "off" state
+function blinkOffScore()
+{
+  document.getElementById("score-box").style.backgroundColor = "grey";
+}
+//Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
+function onOffScore() {
+ for(let i=600; i < 2000; i=i+600)
+ {
+   setTimeout("blinkOnScore()",i);
+   setTimeout("blinkOffScore()",i+300);
+ }
+}
+

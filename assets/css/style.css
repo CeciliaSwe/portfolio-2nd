@@ -426,7 +426,7 @@ a {
             position: relative;
             grid-template-areas: 
             
-            ". . start start start start . ."
+            "restart . start start start start . ."
             ". category category category category category category ."
             ". . value value value value . ."
             ". . . . . . . ."
@@ -450,6 +450,16 @@ a {
         #button-start:hover {
             cursor: pointer;
             font-size: 6.2vw;
+        }
+
+        #restart { 
+            margin-left: 2vw;
+            line-height: 0.7;
+
+        }
+        a {
+            font-size: 3vw;
+            
         }
 
         #category-box {

@@ -327,7 +327,7 @@ a {
             position: relative;
             grid-template-areas: 
         
-            ". . . . start start start start . . . ."
+            "restart . . . start start start start . . . ."
             ". . . . start start start start . . . ."
             "category category category category category category category category category category category category"
             ". . . . value value value value . . . ."
@@ -348,6 +348,14 @@ a {
         #button-start:hover {
             cursor: pointer;
             font-size: 6.5vw;
+        }
+
+        a {
+            font-size: 2vw;
+        }
+
+        #restart {
+            margin-left: 2vw;
         }
 
         #category-box {
@@ -458,8 +466,7 @@ a {
 
         }
         a {
-            font-size: 3vw;
-            
+            font-size: 3vw; 
         }
 
         #category-box {

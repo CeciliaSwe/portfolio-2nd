@@ -158,6 +158,7 @@ let currentAnswer = document.querySelector('input[name="test"]:checked').value;
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
     /*alert("WOOP you did it");*/
     resultsContainer.innerText = currentScore + addedScore;
+    scoreLarge();
     } else {
       /*alert("NAH")*/
       document.getElementById("incorrect").innerHTML++; 
@@ -270,3 +271,28 @@ if ((posA >= quizCatA.length) || (posB >= quizCatB.length) || (posC >= quizCatC.
 
 }
 
+//To visually increase nad "blink" the score size when incremented at correct answer
+function scoreLarge() {
+  largeOn();
+  largeOff();
+  largeOnOff();
+}
+
+// large "off" state
+function largeOff()
+{
+  document.getElementById("score-display").style.fontSize = "initial";
+}
+// large "on" state
+function largeOn()
+{
+  document.getElementById("score-display").style.fontSize = "200%";
+}
+//Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
+function largeOnOff() {
+ for(let i=600; i < 1300; i=i+600)
+ {
+   setTimeout("largeOn()",i);
+   setTimeout("largeOff()",i+300);
+ }
+}

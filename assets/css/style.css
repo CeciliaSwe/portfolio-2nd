@@ -32,7 +32,7 @@ body {
     border: 3px solid #333333;
     grid-template-areas: 
 
-    ". . . . . . . . . . . ."
+    "restart . . . . . . . . . . ."
     ". start start start . value value . question question question ."
     ". start start start . category category . question question question  ."
     ". start start start . category category . option option option ."
@@ -55,6 +55,15 @@ body {
     ". . ."
     ". gameover ."
     ". gameover-text .";
+}
+
+#restart {
+    grid-area: restart;
+    margin-top: 2vh;
+}
+
+#restart:hover {
+    color: #333333;
 }
 
 #button-start {

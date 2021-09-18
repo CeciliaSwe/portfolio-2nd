@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
   shuffle(quizCatA);
   shuffle(quizCatB);
   shuffle(quizCatC);
-  screenSize();
+  /*screenSize();*/
 });
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
@@ -143,7 +143,7 @@ function checkAnswer(event) {
   clear();
   incrementStrike();
   checkLength(quiz);
-  setTimeout(onOff, 2500);
+  setTimeout(onOff, 1500);
  }
 
  //get the value of the checked radiobutton to compare to correct answer and increment results
@@ -219,7 +219,7 @@ function blinkOff()
 }
 //Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
 function onOff() {
- for(let i=700; i < 4000; i=i+700)
+ for(let i=700; i < 2800; i=i+700)
  {
    setTimeout("blinkOn()",i);
    setTimeout("blinkOff()",i+350);
@@ -283,16 +283,16 @@ function blinkOffScore()
 }
 //Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
 function onOffScore() {
- for(let i=600; i < 2000; i=i+600)
+ for(let i=600; i < 1200; i=i+600)
  {
    setTimeout("blinkOnScore()",i);
    setTimeout("blinkOffScore()",i+300);
  }
 }
 
-function screenSize() {
+/* function screenSize() {
   if (window.screen.width <= 320) {
     let modal = document.getElementById("modal-screen-size");
     modal.style.display = "block"; 
   }
-}
+} */

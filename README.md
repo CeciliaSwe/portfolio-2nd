@@ -146,6 +146,9 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 - Button element cannot be descendant of anchor element and vice versa, resolved by wrapping anchor element in a div instead and style as a button (for modal "Play again").
 - All duplicate ids removed
 
+#### Bugs
+- Category and strike boxes appears off center on <320 px screens. It is only visible on the actual device and not on any mock up used.
+- Text "Start" appears off center inside the div on tablet deviced displayed vertically. It is only visible on the actual device and not on any mock up used.
 
 ### User stories testing
 

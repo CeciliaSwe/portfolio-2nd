@@ -6,6 +6,7 @@ let optionText2 = document.getElementById("option-2");
 let optionText3 = document.getElementById("option-3");
 let correctAnswer = "";
 
+//Declares variables for filtered quiz categories
 let quizCatA = quiz.filter(quiz => quiz.category === "Pokemon");
 let quizCatB = quiz.filter(quiz => quiz.category === "Minecraft");
 let quizCatC = quiz.filter(quiz => quiz.category === "Maths");
@@ -18,22 +19,12 @@ let posC = 0;
 //Declares variable for checking if there are questions left in the quiz
 let posTotal = 0;
 
-
-function runRules() {
-  let modal = document.getElementById("modal-rules");
-  
-  // Get the <span> element that closes the modal
-  let span = document.getElementsByClassName("close")[2];
-  
-  modal.style.display = "block";
-  
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-}
+//Wait for DOM to load, the shuffle quiz
+document.addEventListener("DOMContentLoaded", function() {
+  shuffle(quizCatA);
+  shuffle(quizCatB);
+  shuffle(quizCatC);
+});
 
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {

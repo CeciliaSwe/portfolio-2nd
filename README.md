@@ -155,13 +155,15 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 - Text "Start" appears off center inside the div on tablet deviced displayed vertically. It is only visible on the actual device and not on any mock up used.
 
 ### User stories testing
-As a new user, I want to easily understand the main purpose of the site. - TC02
-As a new user, I want to the game to be self explanatory – TC02, TC03
-As a new user, I want to be able to start a game when I am ready. – TC02
-As a new user, I want to know whether my guess was successful or not. – TC07, TC08, TC09
-As a new user, I want to see my scores increase as I answer correctly. - TC08
-As a new user, I want to know when the game is over – TC11, TC12
-As a new user, I want a way to start a new game when the current game has ended. – TC11, TC12
+
+![User stories](assets/images/testcases-printscreen-portfolio-2nd.png)
+1. As a new user, I want to easily understand the main purpose of the site. - TC02
+2. As a new user, I want to the game to be self explanatory – TC02, TC03
+3. As a new user, I want to be able to start a game when I am ready. – TC02
+4. As a new user, I want to know whether my guess was successful or not. – TC07, TC08, TC09
+5. As a new user, I want to see my scores increase as I answer correctly. - TC08
+6. As a new user, I want to know when the game is over – TC11, TC12
+7. As a new user, I want a way to start a new game when the current game has ended. – TC11, TC12
 
 
 ### Further Testing 					

@@ -219,7 +219,7 @@ function gameoverPopup() {
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
     modal.style.display = "none";
-  }
+  };
 }
 
 function alldonePopup() {
@@ -229,7 +229,7 @@ function alldonePopup() {
   let span = document.getElementsByClassName("close")[1];
 
   modal.style.display = "block";
-  displayScore.innerText = `ALL DONE! we have no more questions for you, your total score is ${parseInt(resultsContainer.innerHTML)}. Well done!`
+  displayScore.innerText = `ALL DONE! we have no more questions for you, your total score is ${parseInt(resultsContainer.innerHTML)}. Well done!`;
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {

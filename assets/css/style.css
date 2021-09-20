@@ -7,17 +7,19 @@ body {
     margin: 0;
 }
 
-/* https://www.w3schools.com/css/css3_gradients.asp */
+/* Header */
+/* Gradient tutorial from https://www.w3schools.com/css/css3_gradients.asp */
 #header-title {
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue);
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue);
     color: #333333;
     font-size: 4vw;
     text-transform: uppercase;
     height: 10vh;
     margin-bottom: 1vh;
-    padding-top: 3vh; 
+    padding-top: 3vh;
 }
-  
+
+/* Layout for grid on head page and modals */
 #gridwrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -30,18 +32,18 @@ body {
     height: 80vh;
     border-radius: 15px;
     border: 3px solid #333333;
-    grid-template-areas: 
+    grid-template-areas:
 
-    "restart . . . . . . . . . . ."
-    ". start start start . value value . question question question ."
-    ". start start start . category category . question question question  ."
-    ". start start start . category category . option option option ."
-    ". start start start . category category . option option option ."
-    ". . . . . category category . option option option ."
-    ". . . . . . . . . . . ."
-    ". . . . . score score . . . . ."
-    ". . . . .  strikes strikes . . . . ."
-    ". . . . . . . . . . . .";
+        "restart . . . . . . . . . . ."
+        ". start start start . value value . question question question ."
+        ". start start start . category category . question question question  ."
+        ". start start start . category category . option option option ."
+        ". start start start . category category . option option option ."
+        ". . . . . category category . option option option ."
+        ". . . . . . . . . . . ."
+        ". . . . . score score . . . . ."
+        ". . . . .  strikes strikes . . . . ."
+        ". . . . . . . . . . . .";
 }
 
 #gridwrap-gameover {
@@ -51,12 +53,13 @@ body {
     max-width: 1680px;
     margin: 0 auto;
     position: relative;
-    grid-template-areas: 
-    ". . ."
-    ". gameover ."
-    ". gameover-text .";
+    grid-template-areas:
+        ". . ."
+        ". gameover ."
+        ". gameover-text .";
 }
 
+/* Restart link */
 #restart {
     grid-area: restart;
     margin-top: 2vh;
@@ -66,14 +69,15 @@ body {
     color: #333333;
 }
 
+/* Start/next button */
 #button-start {
-    grid-area: start;  
+    grid-area: start;
     display: block;
     width: 100%;
     box-sizing: border-box;
-    background-color:orange;
+    background-color: orange;
     border-radius: 6px;
-    height: auto;  
+    height: auto;
     font-size: 7vw;
     color: #333333;
     text-transform: uppercase;
@@ -85,6 +89,7 @@ body {
     font-size: 7.5vw;
 }
 
+/* Value area where question value is displayed */
 #value-box {
     grid-area: value;
     display: flex;
@@ -94,13 +99,21 @@ body {
     width: 100%;
     border: 3px solid green;
     color: #fefefe;
-    border-radius: 6px; 
+    border-radius: 6px;
 }
 
-#value-box div, #score-box div {
+#value-box div,
+#score-box div {
     font-size: 1.4vw;
+
 }
 
+#score-display,
+#value-display {
+    margin-left: 0.5vw;
+}
+
+/*  Area where questions category is displayed */
 .category {
     border: 3px solid blue;
     padding: 1rem;
@@ -116,9 +129,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
+/* Area where quiz questions is displayed */
 #question-box {
     display: block;
     grid-area: question;
@@ -137,8 +151,9 @@ body {
     font-size: 1.5vw;
 }
 
-#option-box-outer{
-    grid-area: option;  
+/* Area where question options are displayed */
+#option-box-outer {
+    grid-area: option;
 }
 
 .option-box {
@@ -148,7 +163,7 @@ body {
     padding: 8px;
     margin: 8px auto;
     width: 75%;
-    height: 4vh; 
+    height: 4vh;
 }
 
 .option-box:hover {
@@ -156,17 +171,19 @@ body {
     transition: transform 100ms;
 }
 
-.option-prefix, .option-text {
+.option-prefix,
+.option-text {
     color: #333333;
     font-size: 1.5vw;
 }
 
+/* Submit button  */
 #button-submit {
     display: block;
     width: 40%;
-    background-color:yellow;
+    background-color: yellow;
     border-radius: 6px;
-    height: auto;  
+    height: auto;
     margin: 0 auto;
     font-size: 1vw;
     color: #333333;
@@ -177,6 +194,7 @@ body {
     cursor: pointer;
 }
 
+/* Area where quiz total score is displayed */
 #score-box {
     grid-area: score;
     border: 3px solid green;
@@ -189,10 +207,7 @@ body {
     align-items: center;
 }
 
-#score-display, #value-display {
-    margin-left: 0.5vw;
-}
-
+/* Area for display of strikes/chances left */
 #strike-box {
     grid-area: strikes;
     display: flex;
@@ -209,57 +224,26 @@ body {
     font-size: 1vw;
 }
 
-#gameover {
-    grid-area: gameover;
-    font-size: 2vw;
-    background-color:red;
-    height: 25vh;
-    border-radius: 6px;  
-}
-
-#gameover-button {  
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    background-color:orange;
-    border-radius: 6px;
-    height: 25vh;  
-    font-size: 3rem;
-    color: #333333;
-    text-decoration: none;
-    margin-top: 5vh;
-    padding-top: 8vh; 
-}
-
-#gameover-button:hover {
-    cursor: pointer;
-    font-size: 3vw; 
-}
-
-#gameover-text {
-    grid-area: gameover-text;
-}
-
 #incorrect {
     color: grey
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 25vh; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25vh;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .popup-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.popup-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -267,73 +251,69 @@ body {
     border: 1px solid #888;
     width: 50%;
     height: 50vh;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    
-  }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-  
-  /* The Close Button */
-  .close {
+.close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .popup-header {
+}
+
+.popup-header {
     padding: 2px 16px;
     background-color: red;
-    color:#333333;
-  }
-  
-  .popup-text {
+    color: #333333;
+}
+
+.popup-text {
     padding: 2px 16px;
     color: #333333;
-    }
+}
 
-    .play-again {
-        color: #333333;
-        font-size: 2vh;
-    }
+.play-again {
+    color: #333333;
+    font-size: 2vh;
+}
 
-   
+/* Footer */
 
-    #footer-text {
-        padding: 1vw;
-    }
+#footer-text {
+    padding: 1vw;
+}
 
 a {
-   text-decoration: none;
-   color: #fefefe;
-   font-size: 1vw;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 1vw;
 }
-  
-    @media screen and (max-width: 768px){
 
-        #header-title {
-            font-size: 7vw;
-            height: 8vh;
-            margin-bottom: 3vh;
-            padding-top: 1vh; 
-        }
+@media screen and (max-width: 768px) {
 
-        #gridwrap {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-auto-rows: auto;
-            grid-gap: 5px;
-            max-width: 90%;
-            margin: 0 auto;
-            position: relative;
-            grid-template-areas: 
-        
+    #header-title {
+        font-size: 7vw;
+        height: 8vh;
+        margin-bottom: 3vh;
+        padding-top: 1vh;
+    }
+
+    #gridwrap {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 5px;
+        max-width: 90%;
+        margin: 0 auto;
+        position: relative;
+        grid-template-areas:
+
             "restart . . . start start start start . . . ."
             ". . . . start start start start . . . ."
             "category category category category category category category category category category category category"
@@ -343,110 +323,112 @@ a {
             ". . . . score score score score . . . ."
             ". . . . . strikes strikes . . . . ."
             ". . . . . . . . . . . ."
-            ;
-        }
-
-        #button-start {  
-            font-size: 6vw;
-            height: 15vh;
-            margin-top: 1vh;
-        }
-
-        #button-start:hover {
-            cursor: pointer;
-            font-size: 6.5vw;
-        }
-
-        a {
-            font-size: 2vw;
-        }
-
-        #restart {
-            margin-left: 2vw;
-        }
-
-        #category-box {
-           flex-direction: row;
-           justify-content: space-between;
-           margin: 0 1vw;   
-        }
-
-        .category {
-            font-size: 2.5vw;
-        }
-
-        #value-box {
-            width: auto;
-            height: 5vh;
-            padding: 0.5vw;
-        }
-
-        .option-box {
-            width: 100%;
-            height: auto; 
-        }
-
-        .option-prefix, .option-text {
-        
-            font-size: 2.5vw;
-        }
-
-        #question-box {
-            height: auto;
-            margin-top: 3vh;
-        }
-
-        #question-display {
-            font-size: 2.5vw;
-        }
-
-        #button-submit {
-            width: 75%; 
-            height: 4vh;
-            font-size: 1.5vw
-        }
-
-        #score-box {
-           height: 5vh;
-        }
-
-        #value-box div, #score-box div {
-            font-size: 2.5vw;
-        }
-
-        #score-display {
-            font-size: 4vw;
-        }
-
-        .strike {
-            font-size: 1.5vw;
-        }
-
-        .popup-content {
-            width: 75%;
-            height: 24vh;
-            font-size: 4vw;
-        }
+        ;
     }
 
-    @media screen and (max-width: 380px){
+    #button-start {
+        font-size: 6vw;
+        height: 15vh;
+        margin-top: 1vh;
+    }
 
-        #header-title {
-            font-size: 9vw;
+    #button-start:hover {
+        cursor: pointer;
+        font-size: 6.5vw;
+    }
 
-        }
+    a {
+        font-size: 2vw;
+    }
 
-        #gridwrap {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-auto-rows: auto;
-            grid-gap: 10px;
-            max-width: 90%;
-            max-height: 70vh;
-            margin: 0 auto;
-            position: relative;
-            grid-template-areas: 
-            
+    #restart {
+        margin-left: 2vw;
+    }
+
+    #category-box {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 1vw;
+    }
+
+    .category {
+        font-size: 2.5vw;
+    }
+
+    #value-box {
+        width: auto;
+        height: 5vh;
+        padding: 0.5vw;
+    }
+
+    .option-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .option-prefix,
+    .option-text {
+
+        font-size: 2.5vw;
+    }
+
+    #question-box {
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #question-display {
+        font-size: 2.5vw;
+    }
+
+    #button-submit {
+        width: 75%;
+        height: 4vh;
+        font-size: 1.5vw
+    }
+
+    #score-box {
+        height: 5vh;
+    }
+
+    #value-box div,
+    #score-box div {
+        font-size: 2.5vw;
+    }
+
+    #score-display {
+        font-size: 4vw;
+    }
+
+    .strike {
+        font-size: 1.5vw;
+    }
+
+    .popup-content {
+        width: 75%;
+        height: 24vh;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    #header-title {
+        font-size: 9vw;
+
+    }
+
+    #gridwrap {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        max-width: 90%;
+        max-height: 70vh;
+        margin: 0 auto;
+        position: relative;
+        grid-template-areas:
+
             "restart . start start start start . ."
             ". category category category category category category ."
             ". . value value value value . ."
@@ -457,113 +439,116 @@ a {
             "option option option option option option option option"
             ". score score score score score score ."
             " . . . strikes strikes . . ."
-           
-            ;
-        }
 
-        #button-start {  
-            font-size: 6vw;
-            height: auto;
-            margin-top: 2vh;
-        }
-
-        #button-start:hover {
-            cursor: pointer;
-            font-size: 6.2vw;
-        }
-
-        #restart { 
-            margin-left: 2vw;
-            line-height: 0.7;
-
-        }
-        a {
-            font-size: 3vw; 
-        }
-
-        #category-box {
-           flex-direction: row;
-           align-items: center;
-           justify-content: center;
-           
-        }
-
-        .category {
-            padding: 0.5rem 1.2rem;
-            width: 30%;
-            font-size: 4vw;
-        }
-
-        #value-box {
-            width: auto;
-            height: auto;
-            padding: 0.5rem;
-            border: 2px solid green
-        }
-
-        #value-box div, #score-box div {
-            font-size: 4vw;
-        }
-
-        .option-box {
-            width: 60%;
-            height: auto; 
-            margin: 2px auto;
-        }
-
-        .option-prefix, .option-text {
-            font-size: 4vw;
-        }
-    
-        #question-box {
-            height: auto;
-            width: 90%;
-            margin: 0 auto;
-            border: 2px solid yellow;
-        }
-        
-        #question-display {
-            padding: 0;
-            font-size: 4.5vw;
-            margin-top: 0.8vh;
-        }
-
-        #button-submit {
-            width: 50%; 
-            font-size: 4vw;
-        }
-
-        #score-box {
-           width: 100%;
-           border: 2px solid green;
-        }
-
-         #strike-box {
-            height: 2vh;
-            margin-bottom: 1vh;
-        }
-
-        .strike {
-            background-color: green;
-            padding: 0.4rem 1rem;
-            margin-top: 0.3rem;
-            font-size: 3vw;
-        }
+        ;
     }
 
-    @media screen and (max-width: 320px){
+    #button-start {
+        font-size: 6vw;
+        height: auto;
+        margin-top: 2vh;
+    }
 
-        #gridwrap {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-auto-rows: auto;
-            grid-gap: 0px;
-            max-width: 90%;
-            max-height: 80vh;
-            margin: 0 auto;
-            position: relative;
-            grid-template-areas: 
-            
+    #button-start:hover {
+        cursor: pointer;
+        font-size: 6.2vw;
+    }
+
+    #restart {
+        margin-left: 2vw;
+        line-height: 0.7;
+
+    }
+
+    a {
+        font-size: 3vw;
+    }
+
+    #category-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .category {
+        padding: 0.5rem 1.2rem;
+        width: 30%;
+        font-size: 4vw;
+    }
+
+    #value-box {
+        width: auto;
+        height: auto;
+        padding: 0.5rem;
+        border: 2px solid green
+    }
+
+    #value-box div,
+    #score-box div {
+        font-size: 4vw;
+    }
+
+    .option-box {
+        width: 60%;
+        height: auto;
+        margin: 2px auto;
+    }
+
+    .option-prefix,
+    .option-text {
+        font-size: 4vw;
+    }
+
+    #question-box {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid yellow;
+    }
+
+    #question-display {
+        padding: 0;
+        font-size: 4.5vw;
+        margin-top: 0.8vh;
+    }
+
+    #button-submit {
+        width: 50%;
+        font-size: 4vw;
+    }
+
+    #score-box {
+        width: 100%;
+        border: 2px solid green;
+    }
+
+    #strike-box {
+        height: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    .strike {
+        background-color: green;
+        padding: 0.4rem 1rem;
+        margin-top: 0.3rem;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #gridwrap {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 0px;
+        max-width: 90%;
+        max-height: 80vh;
+        margin: 0 auto;
+        position: relative;
+        grid-template-areas:
+
             "restart . start start start start . ."
             ". category category category category category category ."
             ". . value value value value . ."
@@ -573,17 +558,15 @@ a {
             "option option option option option option option option"
             ". score score score score score score ."
             " . . . strikes strikes . . ."
-            ;
-        }
-
-        #value-box {
-            margin-bottom: 1vh;
-        }
-
-        #option-box {
-            margin-bottom: 1vh;
-        }
-
+        ;
     }
 
-    
+    #value-box {
+        margin-bottom: 1vh;
+    }
+
+    #option-box {
+        margin-bottom: 1vh;
+    }
+
+}

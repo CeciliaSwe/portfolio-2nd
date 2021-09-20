@@ -140,6 +140,7 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 -   [W3C Markup Validator](https://validator.w3.org/nu/#textarea)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 -   [JSHint](https://jshint.com/)
+	* All warnings relating to ES6 syntax are expected and ignored (and are removed by adding /*jshint esversion: 6 */)
 
 #### Fixed warnings and errors
 

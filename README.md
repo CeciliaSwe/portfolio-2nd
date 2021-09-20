@@ -12,7 +12,8 @@ The live website can be found [here](https://ceciliaswe.github.io/portfolio-2nd/
 
 ## Game of games Responsive Website
 
-![Website Mock Up]()
+![Website Mock Up](assets/images/portfolio2nd-responsive-mockups.png) 
+
 
 
 *** 

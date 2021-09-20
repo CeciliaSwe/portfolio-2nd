@@ -63,7 +63,7 @@ Planned features:
 ### The Structure Plane
 ### The Skeleton Plane
 #### Wireframes
-Wireframes created usig Balsamiq are uploaded to the assets folder - [View](https://github.com/CeciliaSwe/portfolio-2nd/assets/images/Wireframe_P2_.pdf)
+Wireframes created usig Balsamiq are uploaded to a separate folder - [View](https://github.com/CeciliaSwe/portfolio-2nd/wireframe_balsamiq/Wireframe_P2_.pdf)
 
 The game consists of:
 (1) Large start-button initiating the game, (2) randomising the question value, (3) randomising the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions in a category have been displayed.

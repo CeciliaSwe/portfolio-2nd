@@ -140,8 +140,10 @@ Testing is required on the JavaScript quiz game created for Portfolio Project 2.
 The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. 
 -   [W3C Markup Validator](https://validator.w3.org/nu/#textarea)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
--   [JSHint](https://jshint.com/)
+-   [JSHint](https://jshint.com/)  
+-   ![JShint Screenshot](assets/images/jshint-screenshot.png) 
 	* All warnings relating to ES6 syntax are expected and ignored (and are removed by adding /*jshint esversion: 6 */)
+	* Warning relating to "quiz" being a undefined variable: warning is issues as the quizquestions are in a separate .js. This is expected and also ignored.
 
 #### Fixed warnings and errors
 

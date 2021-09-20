@@ -186,15 +186,15 @@ function incrementStrike() {
   }
 }
 
-// blink "on" state
+//Blink "on" state
 function blinkOn() {
   document.getElementById("button-start").style.backgroundColor = "#4d4d4d";
 }
-// blink "off" state
+//Blink "off" state
 function blinkOff() {
   document.getElementById("button-start").style.backgroundColor = "orange";
 }
-//Execute blink function every 350 ms to achieve a blink effect end after 2800 ms
+//Execute blink function every 350 ms
 function onOff() {
   for (let i = 700; i < 2800; i = i + 700) {
     setTimeout("blinkOn()", i);
@@ -252,17 +252,10 @@ function blinkOnScore() {
 function blinkOffScore() {
   document.getElementById("score-box").style.backgroundColor = "grey";
 }
-//Execute blink function every 350 ms to achieve a blink effect end after 4000 ms (less than five seconds)
+//Execute blink function to temporarily light up the question box
 function onOffScore() {
   for (let i = 600; i < 1200; i = i + 600) {
     setTimeout("blinkOnScore()", i);
     setTimeout("blinkOffScore()", i + 300);
   }
 }
-
-/* function screenSize() {
-  if (window.screen.width <= 320) {
-    let modal = document.getElementById("modal-screen-size");
-    modal.style.display = "block"; 
-  }
-} */

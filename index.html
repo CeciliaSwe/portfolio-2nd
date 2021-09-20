@@ -18,25 +18,32 @@
     <header id="header-title">
         <div id="header-text">Game of games</div>
     </header>
+     <!-- Gridwrap, allowing for usase of css grid -->
     <div id="gridwrap">
+         <!-- Restart link to restart game at any time-->
         <div id="restart">
             <a href="index.html">
                 <i class="fas fa-redo"></i> Restart
             </a>
         </div>
+        <!-- Start button to initiate game -->
         <button id="button-start">Start</button>
+        <!-- To display value of each question -->
         <div id="value-box">
             <div>Question value:</div>
             <div id="value-display">Value</div>
         </div>
+        <!-- To display the available categories -->
         <div id="category-box">
             <div class="category" id="c-1">Pokemon</div>
             <div class="category" id="c-2">Minecraft</div>
             <div class="category" id="c-3">Maths</div>
         </div>
+        <!-- To display the question -->
         <div id="question-box">
             <div id="question-display">Question</div>
         </div>
+        <!-- To display the available options -->
         <div id="option-box-outer">
             <form>
                 <div class="option-box">
@@ -54,10 +61,12 @@
                 <input type="button" id="button-submit" value="Submit">
             </form>
         </div>
+        <!-- To display the current score -->
         <div id="score-box">
             <div>Your score is:</div>
             <div id="score-display">0</div>
         </div>
+        <!-- To display incorrect answers and chances left -->
         <div id="strike-box">
             <div id="incorrect">0</div>
             <div class="strike" id="strike-1">3</div>
@@ -65,7 +74,7 @@
             <div class="strike" id="strike-3">1</div>
         </div>
     </div>
-    <!-- The Modal popup for game over-->
+    <!-- Modal popup for game over-->
     <div id="modal-gameover" class="modal">
         <!-- Modal content -->
         <div class="popup-content">
@@ -83,7 +92,7 @@
             </div>
         </div>
     </div>
-    <!-- The Modal popup when game runs out of questions in a category-->
+    <!-- Modal popup when game runs out of questions in a category-->
     <div id="modal-alldone" class="modal">
         <!-- Modal content -->
         <div class="popup-content">
@@ -101,21 +110,7 @@
             </div>
         </div>
     </div>
-    
-    <!-- 
-    <div id="modal-screen-size" class="modal">
-         Modal content 
-        <div class="popup-content" id="popup-size">
-            <div class="popup-header">
-                <span class="close">&times;</span>
-                <h2>Hi!</h2>
-            </div>
-            <div class="popup-text">
-                <p id="popup2">Your screen size is too small to play this game optimally, please use a larger screen!</p>
-            </div>
-        </div>
-    </div> -->
-
+    <!-- Footer with GitHub pages link -->
     <footer id="footer">
         <div id="footer-text">
             <a target="_blank" href="https://github.com/CeciliaSwe?tab=repositories" rel="noopener"
@@ -125,11 +120,9 @@
             </a>
         </div>
     </footer>
-
+    <!-- Javascript with quiz questions in separate script -->
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
-
-
 </body>
 
 </html>

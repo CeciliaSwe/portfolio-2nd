@@ -166,7 +166,15 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 7. As a new user, I want a way to start a new game when the current game has ended. – TC11, TC12
 
 
-### Further Testing 					
+### Further Testing 	
+
+The site was testes to to ensure consistency across browsers and screen sizen. Full testing matrix can be found [here](miscellaneous/testing_matrix_portfolio-2nd.xlsx)
+
+Noted issues
+
+On mobile and tablet devices (not in Chrome Developer Tools), the following was noted:
+* Category and strike boxes appears off center on <320 px screens. 					
+* "Start" appears off center inside the div on tablet deviced displayed vertically. 					
 
 ##### Return to [top]
 

@@ -368,7 +368,6 @@ a {
 
     .option-prefix,
     .option-text {
-
         font-size: 2.5vw;
     }
 
@@ -415,7 +414,6 @@ a {
 
     #header-title {
         font-size: 9vw;
-
     }
 
     #gridwrap {
@@ -457,7 +455,6 @@ a {
     #restart {
         margin-left: 2vw;
         line-height: 0.7;
-
     }
 
     a {
@@ -468,7 +465,6 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-
     }
 
     .category {

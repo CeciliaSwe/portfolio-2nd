@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // Uses event listner to initialize the quiz with assigning a random value, category and question
 function clickQuestion (event) {
   let selectDiv = document.getElementsByClassName('category');
-  let classLength = selectDiv.length;
-    
-  /*alert("There are "+classLength+" category classes in the html code");*/
   let randomCategory = Math.floor(Math.random() * selectDiv.length);
   
   /*console.log(randomCategory, selectDiv[randomCategory]);
@@ -54,25 +51,21 @@ function questionValue() {
     let values = [10, 20, 50, 100];
     let randomValue = Math.floor(Math.random() * values.length);
     console.log(values[randomValue]);
-    /*alert(`The value of the question is ${values[randomValue]}.`);*/
     document.getElementById("value-display").innerHTML = values[randomValue];
 }
 
 //Changes background color for the randomised category
 function lightCategory(randomCategory) {
     if (randomCategory === 0) {
-        /*alert("Picked 1")*/
         document.getElementById("c-1").style.backgroundColor = "orange";
         document.getElementById("c-1").style.color = "blue";
     } else if (randomCategory === 1) {
-        /*alert("Picked 2");*/
         document.getElementById("c-2").style.backgroundColor = "orange";
         document.getElementById("c-2").style.color = "blue";
     } else if (randomCategory === 2) {
-        /*alert("Picked 3");*/
         document.getElementById("c-3").style.backgroundColor = "orange";
         document.getElementById("c-3").style.color = "blue";
-    };
+    }
     
 }
 
@@ -80,8 +73,6 @@ function lightCategory(randomCategory) {
 // Displays questions from randomised category and increments question index for next round
 function displayQ(randomCategory) {
     if (randomCategory === 0) {
-        /*alert("Picked Pokemon");*/
-        
         console.log(quizCatA[posA]);
         quizContainer.innerText = quizCatA[posA].question;
         optionText1.innerText = quizCatA[posA].choice1;
@@ -91,8 +82,6 @@ function displayQ(randomCategory) {
         posA++;
         posTotal++;
     } else if (randomCategory === 1) {
-        /*alert("Picked Minecraft");*/
-        
         console.log(quizCatB[posB]);
         quizContainer.innerText = quizCatB[posB].question;
         optionText1.innerText = quizCatB[posB].choice1;
@@ -102,8 +91,6 @@ function displayQ(randomCategory) {
         posB++;
         posTotal++;
     } else if (randomCategory === 2) {
-        /*alert("Picked Maths");*/
-        
         console.log(quizCatC[posC]);
         quizContainer.innerText = quizCatC[posC].question;
         optionText1.innerText = quizCatC[posC].choice1;
@@ -113,9 +100,9 @@ function displayQ(randomCategory) {
         posC++;
         posTotal++;
     } else {
-        /*alert("Not defined yet");*/
+        
     }
-  };  
+  }  
 
 //Shuffles quiz array according to Fisher-Yates https://bost.ocks.org/mike/shuffle/
 function shuffle(quiz) {
@@ -151,15 +138,11 @@ function compare() {
 let currentAnswer = document.querySelector('input[name="test"]:checked').value;
   let currentScore = parseInt(resultsContainer.innerHTML);
   let addedScore = parseInt(document.getElementById("value-display").innerHTML);
-  let incorrect = parseInt(document.getElementById("incorrect").innerHTML);
 
-  
   if (parseInt(currentAnswer) === parseInt(correctAnswer)) {
-    /*alert("WOOP you did it");*/
     resultsContainer.innerText = currentScore + addedScore;
     onOffScore();
     } else {
-      /*alert("NAH")*/
       document.getElementById("incorrect").innerHTML++; 
     }
 } 
@@ -185,8 +168,8 @@ function clear() {
   optionText2.innerText = "";
   optionText3.innerText = "";
   document.getElementById("button-start").innerText = "Next";
-  document.getElementById("value-display").innerText = "Value"
-};
+  document.getElementById("value-display").innerText = "Value";
+}
 
 //Visually Indicates how many incorrect answers
 function incrementStrike() {

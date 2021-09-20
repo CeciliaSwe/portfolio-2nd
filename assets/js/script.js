@@ -197,8 +197,8 @@ function blinkOff() {
 //Execute blink function every 350 ms
 function onOff() {
   for (let i = 700; i < 2800; i = i + 700) {
-    setTimeout("blinkOn()", i);
-    setTimeout("blinkOff()", i + 350);
+    setTimeout(blinkOn, i);
+    setTimeout(blinkOff, i + 350);
   }
 }
 
@@ -255,7 +255,7 @@ function blinkOffScore() {
 //Execute blink function to temporarily light up the question box
 function onOffScore() {
   for (let i = 600; i < 1200; i = i + 600) {
-    setTimeout("blinkOnScore()", i);
-    setTimeout("blinkOffScore()", i + 300);
+    setTimeout(blinkOnScore, i);
+    setTimeout(blinkOffScore, i + 300);
   }
 }

@@ -212,14 +212,14 @@ On mobile and tablet devices (not in Chrome Developer Tools), the following was 
 
 ### Project Creation
 The project was created using the CI Gitpod Full Template.
-1. Navigate to CI Gitpod Full Template [here] (https://github.com/Code-Institute-Org/gitpod-full-template) and click the 'Use this template' button.
+1. Navigate to CI Gitpod Full Template [here](https://github.com/Code-Institute-Org/gitpod-full-template) and click the 'Use this template' button.
 2. Enter chosen repository name, then click "Create repository from template".
 3. Navigate to the new repository on GitHub and click the Gitpod button to build the workspace.
 4. The following commands were used for version control throughout the project:
 
-git add filename - to add files to the staging area before committing.
-git commit -m "commit message" - to commit changes to the local repository.
-git push - to push committed changes to the GitHub repository.
+- git add filename - to add files to the staging area before committing.
+- git commit -m "commit message" - to commit changes to the local repository.
+- git push - to push committed changes to the GitHub repository.
 
 ### Local Deployment/Clone
 As described on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)

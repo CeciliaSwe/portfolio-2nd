@@ -251,7 +251,7 @@ body {
     padding: 0;
     border: 1px solid #888;
     width: 50%;
-    height: 50vh;
+    height: 25vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -406,7 +406,7 @@ a {
 
     .popup-content {
         width: 75%;
-        height: 24vh;
+        height: 40vh;
         font-size: 4vw;
     }
 }
@@ -530,6 +530,12 @@ a {
         padding: 0.4rem 1rem;
         margin-top: 0.3rem;
         font-size: 3vw;
+    }
+
+    .popup-content {
+        width: 75%;
+        height: 30vh;
+        font-size: 4vw;
     }
 }
 

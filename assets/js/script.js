@@ -45,7 +45,6 @@ questionButton.addEventListener('click', clickQuestion);
 function questionValue() {
   let values = [10, 20, 50, 100];
   let randomValue = Math.floor(Math.random() * values.length);
-  console.log(values[randomValue]);
   document.getElementById("value-display").innerHTML = values[randomValue];
 }
 
@@ -67,7 +66,6 @@ function lightCategory(randomCategory) {
 // Displays questions from randomised category and increments question index for next round
 function displayQ(randomCategory) {
   if (randomCategory === 0) {
-    console.log(quizCatA[posA]);
     quizContainer.innerText = quizCatA[posA].question;
     optionText1.innerText = quizCatA[posA].choice1;
     optionText2.innerText = quizCatA[posA].choice2;
@@ -76,7 +74,6 @@ function displayQ(randomCategory) {
     posA++;
     posTotal++;
   } else if (randomCategory === 1) {
-    console.log(quizCatB[posB]);
     quizContainer.innerText = quizCatB[posB].question;
     optionText1.innerText = quizCatB[posB].choice1;
     optionText2.innerText = quizCatB[posB].choice2;
@@ -85,7 +82,6 @@ function displayQ(randomCategory) {
     posB++;
     posTotal++;
   } else if (randomCategory === 2) {
-    console.log(quizCatC[posC]);
     quizContainer.innerText = quizCatC[posC].question;
     optionText1.innerText = quizCatC[posC].choice1;
     optionText2.innerText = quizCatC[posC].choice2;

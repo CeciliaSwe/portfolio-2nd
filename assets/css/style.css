@@ -3,7 +3,7 @@ body {
     font-family: "Glory", sans-serif;
     text-align: center;
     height: 100%;
-    background: #4d4d4d;
+    background: #282828;
     margin: 0;
 }
 
@@ -25,7 +25,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: 9.5%;
     grid-gap: 5px;
-    background: grey;
+    background:#585858;
     margin: 0 auto;
     position: relative;
     max-width: 90vw;
@@ -136,7 +136,7 @@ body {
 #question-box {
     display: block;
     grid-area: question;
-    background-color: grey;
+    background-color: #585858;
     border-radius: 6px;
     border: 3px solid yellow;
     padding: 0px;
@@ -149,6 +149,7 @@ body {
 #question-display {
     padding: 1.6rem;
     font-size: 1.5vw;
+    background-color: #585858;
 }
 
 /* Area where question options are displayed */
@@ -226,7 +227,7 @@ body {
 }
 
 #incorrect {
-    color: grey
+    color: #585858;
 }
 
 /* The Modal (background) */

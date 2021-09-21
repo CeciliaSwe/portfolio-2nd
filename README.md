@@ -16,7 +16,6 @@ The live website can be found [here](https://ceciliaswe.github.io/portfolio-2nd/
 ![Website Mock Up](assets/images/portfolio2nd-responsive-mockups.png) 
 
 
-
 *** 
 ## User Experience (UX)
 
@@ -28,46 +27,22 @@ Site Goals:
 * To provide users with an interactive game to play.
 * To create an fun, interactive game that makes the user want to stay and play, and also return to the website.
 
-#### User stories
+### User stories
 
-New users:
-As a new user, I want to easily understand the main purpose of the site.
-As a new user, I want to the game to be self explanatory
-As a new user, I want to be able to start a game when I am ready.
-As a new user, I want to know whether my guess was successful or not.
-As a new user, I want to see my scores increase as I answer correctly.
-As a new user, I want to know when the game is over.
-As a new user, I want a way to start a new game when the current game has ended.
+* As a user, I want to easily understand the main purpose of the site.
+* As a user, I want to the game to be self explanatory
+* As a user, I want to be able to start a game when I am ready.
+* As a user, I want to know whether my guess was successful or not.
+* As a user, I want to see my scores increase as I answer correctly.
+* As a user, I want to know when the game is over.
+* As a user, I want a way to start a new game when the current game has ended.
+* As a user, I want to improve my previous score.
 
-Returning users:
-As a returning user, I want to improve my previous score.
-
-Frequent users:
-As per returning users
-
-
-### The Scope Plane
-
-Planned features: 
-
-* Page Heading - A page heading that has a clear caption what the page is about.
-* An interactive quiz.
-* A button to start the game.
-* Randomised question value and question category.
-* Correct guesses increments score by the randomised value of the questions.
-* Restart Game button when the site user is either Game over or has exhaused all questions in a category.
-* Visual display of incorrect guesses - removing 1 life (of 3).
-
-### The Structure Plane
-### The Skeleton Plane
 #### Wireframes
 Wireframes created usig Balsamiq are uploaded to a separate folder - [View](wireframes_balsamiq/Wireframe_P2_.pdf)
 
 The game consists of:
 (1) Large start-button initiating the game, (2) randomising the question value, (3) randomising the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions in a category have been displayed.
-
-### The Surface Plane
-
 
 ### Design
 
@@ -88,6 +63,7 @@ Only 3 categories was included in the final game instead of 4.
 ## Features
 The application consists of one single page, with modals to popup when game is over. 
 
+### Existing features
 
 - __Play button__
 
@@ -132,9 +108,6 @@ The application consists of one single page, with modals to popup when game is o
   - Allows the user to restart the game at any time 
 
 
-
-
-
 ### Future features
 * A larger set of quiz questions and categories.
 * Introduction of game modes "Easy" or "Hard" to adjust question difficulty to suit different ages.
@@ -168,12 +141,11 @@ The application consists of one single page, with modals to popup when game is o
 	* Used to generate the screenshots for responsive design.
 * [Favicon](https://favicon.io/)
 	* Used to generate the questionmark favicon
-
 	
 ##### Return to [top]
 
 ## Testing
-Testing is required on the JavaScript quiz game created for Portfolio Project 2. All features and user stories documented in the README are to be tested.
+Testing is required on the JavaScript quiz game. All features and user stories documented in the README are to be tested.
 
 ### Validation
 The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. All pages of the final website passed validation without relevant errors or warnings (see comments for JShint below).
@@ -184,7 +156,7 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 	* All warnings relating to ES6 syntax are expected and ignored (and are removed by adding /*jshint esversion: 6 */)
 	* Warning relating to "quiz" being a undefined variable: warning is issues as the quizquestions are in a separate .js. This is expected and also ignored.
 
-#### Fixed warnings and errors
+### Fixed warnings and errors
 
 - Button element cannot be descendant of anchor element and vice versa, resolved by wrapping anchor element in a div instead and style as a button (for modal "Play again").
 - All duplicate ids removed
@@ -193,21 +165,24 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 
 ### User stories testing
 
+ALl user stories and site functionality was tested. Full testing matrix can be found [here](miscellaneous/testing_matrix_portfolio-2nd.xlsx)
+
 ![User stories](assets/images/testcases-printscreen-portfolio-2nd.png)
-1. As a new user, I want to easily understand the main purpose of the site. - TC02
-2. As a new user, I want to the game to be self explanatory – TC02, TC03
-3. As a new user, I want to be able to start a game when I am ready. – TC02
-4. As a new user, I want to know whether my guess was successful or not. – TC07, TC08, TC09
-5. As a new user, I want to see my scores increase as I answer correctly. - TC08
-6. As a new user, I want to know when the game is over – TC11, TC12
-7. As a new user, I want a way to start a new game when the current game has ended. – TC11, TC12
+1. As a user, I want to easily understand the main purpose of the site. - TC02
+2. As a user, I want to the game to be self explanatory – TC02, TC03
+3. As a user, I want to be able to start a game when I am ready. – TC03
+4. As a user, I want to know whether my guess was successful or not. – TC07, TC08, TC09
+5. As a user, I want to see my scores increase as I answer correctly. - TC08
+6. As a user, I want to know when the game is over – TC11, TC12
+7. As a user, I want a way to start a new game when the current game has ended. – TC11, TC12
+8. As a user, I want to improve my previous score. - TC11, TC12
 
 
 ### Further Testing 	
 
 The site was testes to to ensure consistency across browsers and screen sizen. Full testing matrix can be found [here](miscellaneous/testing_matrix_portfolio-2nd.xlsx)
 
-Noted issues
+### Noted bugs
 
 On mobile and tablet devices (not in Chrome Developer Tools), the following was noted:
 * Category and strike boxes appears off center on <320 px screens. 					
@@ -249,8 +224,7 @@ Assuming you have cloned the repository, it is deployed to GitHub Pages through 
 4. Under "Source", click the dropdown and select "Branch: master", then click "Save".
 5. Once deployed, the now published site [link](https://ceciliaswe.github.io/portfolio-2nd/) is found in the "Pages" section.
 
-### Common
-#### Fork project
+### Fork project
 This is used to propose changes to someone else's project or to use someone else's project as a starting point for your own idea. 
 
 1. Navigate to the GitHub Repository you want to fork.
@@ -261,21 +235,21 @@ This will create a duplicate of the full project in your GitHub Repository.
 ##### Return to [top]
 
 ## Credits
-### Images and videos
-
 
 ### Code
 * The quiz is shuffled according to Fisher-Yates https://bost.ocks.org/mike/shuffle/.
 * How to create a gradient background color was developed from a tutorial on [w3schools](https://www.w3schools.com/cssref/func_linear-gradient.asp)
 * How to create a modal was developed from a tutorial on [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 * How to using scripts to control blinking was developed from a tutorial on [w3.org](https://www.w3.org/TR/WCAG20-TECHS/SCR22.html) 
+* How to create grid areas with CSS was developed from a tutotial by [The Net Ninja] (https://www.youtube.com/watch?v=tPosqmwIx0w)
 
 
 ### Acknowledgements
+-   To my Mentor [Chris Quinn](https://github.com/10xOXR) for guidance and pushing me to make smart choices.
+-   To all CI Tutors for pointing in the right direction.
 
 
-
-##### Return to [top]
+##### Return to [top](#portfolio-project-2---game-of-games)
 
 
 

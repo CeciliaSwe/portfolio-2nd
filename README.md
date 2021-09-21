@@ -249,7 +249,7 @@ This will create a duplicate of the full project in your GitHub Repository.
 -   To all CI Tutors for pointing in the right direction.
 
 
-##### Return to [top](#portfolio-project-2---game-of-games)
+##### Return to [top](#game-of-games)
 
 
 

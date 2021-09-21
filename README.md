@@ -179,9 +179,9 @@ The application consists of one single page, with modals to popup when game is o
 Testing is required on the JavaScript quiz game created for Portfolio Project 2. All features and user stories documented in the README are to be tested.
 
 ### Validation
-The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. 
--   [W3C Markup Validator](https://validator.w3.org/nu/#textarea)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to validate the code. All pages of the final website passed validation without relevant errors or warnings (see comments for JShint below).
+-   [W3C Markup Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fceciliaswe.github.io%2Fportfolio-2nd%2Findex.html)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fceciliaswe.github.io%2Fportfolio-2nd%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
 -   [JSHint](https://jshint.com/)  
 -   ![JShint Screenshot](assets/images/jshint-screenshot.png) 
 	* All warnings relating to ES6 syntax are expected and ignored (and are removed by adding /*jshint esversion: 6 */)

@@ -248,6 +248,7 @@ This will create a duplicate of the full project in your GitHub Repository.
 -   To my Mentor [Chris Quinn](https://github.com/10xOXR) for guidance and pushing me to make smart choices.
 -   To all CI Tutors for pointing in the right direction.
 
+##### Return to [top](https://github.com/CeciliaSwe/portfolio-2nd/blob/master/README.md#game-of-games)
 
 ##### Return to [top](#game-of-games)
 

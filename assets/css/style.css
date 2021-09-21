@@ -250,21 +250,21 @@ body {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    border: 1px solid #585858;
     width: 50%;
     height: 25vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .close {
-    color: white;
+    color: #fefefe;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
 .close:hover {
-    color: #000;
+    color: #333333;
     text-decoration: none;
     cursor: pointer;
 }

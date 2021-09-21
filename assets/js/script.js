@@ -143,7 +143,7 @@ function compare() {
 function clear() {
   // Clears lit category back to grey
   document.getElementById("c-1").style.backgroundColor = "#585858";
-  document.getElementById("c-2").style.backgroundColor = "#585858"
+  document.getElementById("c-2").style.backgroundColor = "#585858";
   document.getElementById("c-3").style.backgroundColor = "#585858";
   document.getElementById("c-1").style.color = "white";
   document.getElementById("c-2").style.color = "white";

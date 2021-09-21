@@ -58,7 +58,7 @@ The font used for my website is "Glory". The font is provided by Google Fonts.
 #### Differences to Design
 Only 3 categories was included in the final game instead of 4.
 
-##### Return to [top]
+##### Return to [top](#game-of-games)
 
 ## Features
 The application consists of one single page, with modals to popup when game is over. 
@@ -113,7 +113,7 @@ The application consists of one single page, with modals to popup when game is o
 * Introduction of game modes "Easy" or "Hard" to adjust question difficulty to suit different ages.
 * Implement a timer function and allow the user to chose between a set number of attempts and/or a time limit.
 
-##### Return to [top]
+##### Return to [top](#game-of-games)
 
 ## Technologies
 ### Languages used
@@ -142,7 +142,7 @@ The application consists of one single page, with modals to popup when game is o
 * [Favicon](https://favicon.io/)
 	* Used to generate the questionmark favicon
 	
-##### Return to [top]
+##### Return to [top](#game-of-games)
 
 ## Testing
 Testing is required on the JavaScript quiz game. All features and user stories documented in the README are to be tested.
@@ -188,7 +188,7 @@ On mobile and tablet devices (not in Chrome Developer Tools), the following was 
 * Category and strike boxes appears off center on <320 px screens. 					
 * "Start" appears off center inside the div on tablet deviced displayed vertically. 					
 
-##### Return to [top]
+##### Return to [top](#game-of-games)
 
 ## Deployment
 
@@ -232,7 +232,7 @@ This is used to propose changes to someone else's project or to use someone else
 
 This will create a duplicate of the full project in your GitHub Repository.
 
-##### Return to [top]
+##### Return to [top](#game-of-games)
 
 ## Credits
 
@@ -248,7 +248,6 @@ This will create a duplicate of the full project in your GitHub Repository.
 -   To my Mentor [Chris Quinn](https://github.com/10xOXR) for guidance and pushing me to make smart choices.
 -   To all CI Tutors for pointing in the right direction.
 
-##### Return to [top](https://github.com/CeciliaSwe/portfolio-2nd/blob/master/README.md#game-of-games)
 
 ##### Return to [top](#game-of-games)
 

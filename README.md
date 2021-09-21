@@ -117,7 +117,7 @@ The application consists of one single page, with modals to popup when game is o
   - Corresponding modal (after 3 wrong answers or when all questions in a category in exhausted) will popup and let the user know that the Game is over and their total score. 
   - This section gives the user the option to chose to play again or close the modal.
 
-![Modal](assets/images/modal-alldone.png) 
+![Modal](assets/images/alldone.png) 
 
 - __Restart__
 

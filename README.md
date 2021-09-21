@@ -65,47 +65,65 @@ The application consists of one single page, with modals to popup when game is o
 
 ### Existing features
 
-- __Play button__
+- __Start button__
 
-  - Clicking "Play" initiates the game; randomising a value (being displayed in the value box), a category (lighting up in orange) and a question  - which is displayed with corresponding options.
+  - Clicking "Start" initiates the game; randomising a value (being displayed in the value box), a category (lighting up in orange) and a question  - which is displayed with corresponding options.
   - This section will allow the user to control both when to initiate the game and when to display the next questions (button is then displaying "Next"). 
+  
+  ![Playbutton](assets/images/start.png) 
 
 - __Value box__
 
   - The value box displays the randomised value, letting the user know how much a question is worth.
 
+![Valuebox](assets/images/valuebox.png) 
+
 - __Category section__
 
   - A randomised category will light up in orange, letting the user know what category the questions is from.
+
+![Categories](assets/images/categories.png) 
 
 - __Question and option sections__
 
   - Displays the questions and corresponding options.
   - This section will allow the user to select one of the options by clicking on the radio button or option text.
 
+![Question-Option](assets/images/question-option.png) 
+
 - __Submit button__
 
   - Clicking "Submit" will either (1) increment "Your Score is:" by the value randomised for the questions (and the score box blinks in green for clear feedback that the answer was correct) or (2) turn one of the 3 strikes/lives red and replace the number with an "X".
   - This section will allow the user to control when to submit the chosen option. 
 
+![Submit](assets/images/submit.png) 
+
 - __Score box__
 
   - The score box displays the accumulated score for the active round of the quiz and is incremented by the value randomised for the question if the answer is correct.
   - This section gives visual feedback if answer is correct - the score box temporarily lights up in green.
+
+![Scorebox](assets/images/scorebox.png) 
   
 - __Strike box__
 
   - Displays the chances left before the game is over. When answers are wrong, one of the 3 strikes/lives turn red and number is replaced by "X".
   - This section gives the user feedback on remaining chances.
 
+![Strikebox](assets/images/strikebox.png) 
+
 - __Game over / All done popups__
 
   - Corresponding modal (after 3 wrong answers or when all questions in a category in exhausted) will popup and let the user know that the Game is over and their total score. 
   - This section gives the user the option to chose to play again or close the modal.
 
+![Modal](assets/images/modal-alldone.png) 
+
 - __Restart__
 
   - Allows the user to restart the game at any time 
+  
+ ![Restart](assets/images/restart.png) 
 
 
 ### Future features

@@ -20,9 +20,6 @@ The live website can be found [here](https://ceciliaswe.github.io/portfolio-2nd/
 *** 
 ## User Experience (UX)
 
-
-
-### The Strategy Plane
 This website was created to showcase my knowledge of HTML, CSS & JavaScript and to provide users with some entertainment in the form of an online quiz game featuring categories for Pokemon, Minecraft and Maths. The game should be intuitive, simple to interact with and give feedback to the user.
 
 Site Goals:
@@ -191,10 +188,8 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint will be used to 
 
 - Button element cannot be descendant of anchor element and vice versa, resolved by wrapping anchor element in a div instead and style as a button (for modal "Play again").
 - All duplicate ids removed
+- JShint issued warning W066 for setTimeout method, error was caused by the function being passed as string and was fixed by editing the syntax.
 
-#### Bugs
-- Category and strike boxes appears off center on <320 px screens. It is only visible on the actual device and not on any mock up used.
-- Text "Start" appears off center inside the div on tablet deviced displayed vertically. It is only visible on the actual device and not on any mock up used.
 
 ### User stories testing
 

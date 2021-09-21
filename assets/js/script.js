@@ -142,9 +142,9 @@ function compare() {
 //Clears to prep for next question
 function clear() {
   // Clears lit category back to grey
-  document.getElementById("c-1").style.backgroundColor = "grey";
-  document.getElementById("c-2").style.backgroundColor = "grey";
-  document.getElementById("c-3").style.backgroundColor = "grey";
+  document.getElementById("c-1").style.backgroundColor = "#585858";
+  document.getElementById("c-2").style.backgroundColor = "#585858"
+  document.getElementById("c-3").style.backgroundColor = "#585858";
   document.getElementById("c-1").style.color = "white";
   document.getElementById("c-2").style.color = "white";
   document.getElementById("c-3").style.color = "white";
@@ -246,7 +246,7 @@ function blinkOnScore() {
 }
 // blink "off" state
 function blinkOffScore() {
-  document.getElementById("score-box").style.backgroundColor = "grey";
+  document.getElementById("score-box").style.backgroundColor = "#585858";
 }
 //Execute blink function to temporarily light up the question box
 function onOffScore() {

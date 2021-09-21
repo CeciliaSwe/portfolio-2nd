@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Game of games is a kids' quiz game with randomised question values and questions. It is a site that hopes to provide a fun, interactive and education moment for kids, letting them interact with the page and answers quiz questions in child friendly categories.
+Game of games is a kids' quiz game with randomised question values and questions. It is a site that hopes to provide a fun, interactive and educational moment for kids, letting them interact with the page and answers quiz questions in child friendly categories.
 
-It was built using HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development.
+The site was built using HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development.
 
 A full list of technologies used can be found in the technologies section of this document. Note that GitHub as of March 2021 automatically creates a Table of Contents for the README file.
 
@@ -23,7 +23,7 @@ This website was created to showcase my knowledge of HTML, CSS & JavaScript and 
 
 Site Goals:
 
-* To showcase my skille in HTML, CSS and JavaScript.
+* To showcase my skills in HTML, CSS and JavaScript.
 * To provide users with an interactive game to play.
 * To create an fun, interactive game that makes the user want to stay and play, and also return to the website.
 
@@ -243,7 +243,7 @@ All code has been custom written for this project, with the exception of the shu
 * How to create a gradient background color - tutorial on [w3schools](https://www.w3schools.com/cssref/func_linear-gradient.asp)
 * How to create a modal - tutorial on [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 * How to use scripts to control blinking - tutorial on [w3.org](https://www.w3.org/TR/WCAG20-TECHS/SCR22.html) 
-* How to create grid areas with CSS was - tutorial by [The Net Ninja] (https://www.youtube.com/watch?v=tPosqmwIx0w)
+* How to create grid areas with CSS was - tutorial by [The Net Ninja](https://www.youtube.com/watch?v=tPosqmwIx0w)
 
 
 ### Acknowledgements

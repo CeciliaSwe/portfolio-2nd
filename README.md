@@ -38,7 +38,7 @@ Site Goals:
 * As a user, I want a way to start a new game when the current game has ended.
 * As a user, I want to improve my previous score.
 
-#### Wireframes
+### Wireframes
 Wireframes created usig Balsamiq are uploaded to a separate folder - [View](wireframes_balsamiq/Wireframe_P2_.pdf)
 
 The game consists of:
@@ -237,16 +237,18 @@ This will create a duplicate of the full project in your GitHub Repository.
 ## Credits
 
 ### Code
+All code has been custom written for this project, with the exception of the shuffle function below which was only slightly modified. Other inspiration and tutoritals are credited as per below:
+
 * The quiz is shuffled according to Fisher-Yates https://bost.ocks.org/mike/shuffle/.
-* How to create a gradient background color was developed from a tutorial on [w3schools](https://www.w3schools.com/cssref/func_linear-gradient.asp)
-* How to create a modal was developed from a tutorial on [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
-* How to using scripts to control blinking was developed from a tutorial on [w3.org](https://www.w3.org/TR/WCAG20-TECHS/SCR22.html) 
-* How to create grid areas with CSS was developed from a tutotial by [The Net Ninja] (https://www.youtube.com/watch?v=tPosqmwIx0w)
+* How to create a gradient background color - tutorial on [w3schools](https://www.w3schools.com/cssref/func_linear-gradient.asp)
+* How to create a modal - tutorial on [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+* How to use scripts to control blinking - tutorial on [w3.org](https://www.w3.org/TR/WCAG20-TECHS/SCR22.html) 
+* How to create grid areas with CSS was - tutorial by [The Net Ninja] (https://www.youtube.com/watch?v=tPosqmwIx0w)
 
 
 ### Acknowledgements
 -   To my Mentor [Chris Quinn](https://github.com/10xOXR) for guidance and pushing me to make smart choices.
--   To all CI Tutors for pointing in the right direction.
+-   To CI Tutors for pointing in the right direction.
 
 
 ##### Return to [top](#game-of-games)

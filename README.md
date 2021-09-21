@@ -30,7 +30,7 @@ Site Goals:
 ### User stories
 
 * As a user, I want to easily understand the main purpose of the site.
-* As a user, I want to the game to be self explanatory
+* As a user, I want to the game to be self explanatory.
 * As a user, I want to be able to start a game when I am ready.
 * As a user, I want to know whether my guess was successful or not.
 * As a user, I want to see my scores increase as I answer correctly.
@@ -39,7 +39,7 @@ Site Goals:
 * As a user, I want to improve my previous score.
 
 ### Wireframes
-Wireframes created usig Balsamiq are uploaded to a separate folder - [View](wireframes_balsamiq/Wireframe_P2_.pdf)
+Wireframes created using Balsamiq are uploaded to a separate folder - [View](wireframes_balsamiq/Wireframe_P2_.pdf)
 
 The game consists of:
 (1) Large start-button initiating the game, (2) randomising the question value, (3) randomising the category, and (4) displays a questions and answer options within the category. When user selects an answer, either (5) the score is incremented by the value of the question or (6) a "life" is lost. Game is over when 3 lives are lost, or all questions in a category have been displayed.
@@ -47,7 +47,7 @@ The game consists of:
 ### Design
 
 #### Color Scheme
-Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow, blue and orange are used for the question button, categories and question / options sections.
+Being a kids game, the color scheme chosen are shades of the base colors. They bring contrast and a sense of recognition to the game. Green and red are intuitively used for the strikes left / questions wrong sections as well as the question value and score sections, while yellow, blue and orange are used for the start button, categories and question / options sections.
 
 #### Imagery
 No physical images will be used on the site.
@@ -67,40 +67,40 @@ The application consists of one single page, with modals to popup when game is o
 
 - __Play button__
 
-  - Clicking "Play" initiates the game; randomising a value (being displayed in the value box), a category (lighting up in orange) and displaying a question with corresponding options.
-  - This section will allow the user to control both when to initiate the game and when to display the next questions (button is the displaying "Next"). 
+  - Clicking "Play" initiates the game; randomising a value (being displayed in the value box), a category (lighting up in orange) and a question  - which is displayed with corresponding options.
+  - This section will allow the user to control both when to initiate the game and when to display the next questions (button is then displaying "Next"). 
 
 - __Value box__
 
-  - The value box displays the randomised value, letting the user know how much this questions is worth.
+  - The value box displays the randomised value, letting the user know how much a question is worth.
 
 - __Category section__
 
-  - A randomised category will light up in orange, letting the user know what category the questions is from
+  - A randomised category will light up in orange, letting the user know what category the questions is from.
 
 - __Question and option sections__
 
   - Displays the questions and corresponding options.
-  - This section will allow the user to select one of the options by clicking on the radiobutton or option text.
+  - This section will allow the user to select one of the options by clicking on the radio button or option text.
 
 - __Submit button__
 
-  - Clicking "Submit" will either (1) increment "Your Score is:" by the value randomised for the questions (and the score box blinks in green for clear feedback that the answer was correct) or (2) turn one of the 3 strikes/lives red and replace the numver with an "X".
+  - Clicking "Submit" will either (1) increment "Your Score is:" by the value randomised for the questions (and the score box blinks in green for clear feedback that the answer was correct) or (2) turn one of the 3 strikes/lives red and replace the number with an "X".
   - This section will allow the user to control when to submit the chosen option. 
 
 - __Score box__
 
-  - The score box displays the accumulkated score for the round of the quiz and is incremented by the value randomised for the question if the answer is correct
-  - This section gives visual feedback if answer is corract - the score box temporarily lights up in green.
+  - The score box displays the accumulated score for the active round of the quiz and is incremented by the value randomised for the question if the answer is correct.
+  - This section gives visual feedback if answer is correct - the score box temporarily lights up in green.
   
 - __Strike box__
 
-  - Displays the chances left before game over turns one of the 3 strikes/lives red and replace the numver with an "X" if the answer is incorrect.
-  - This section gives the user feddback on chances left
+  - Displays the chances left before the game is over. When answers are wrong, one of the 3 strikes/lives turn red and number is replaced by "X".
+  - This section gives the user feedback on remaining chances.
 
-- __Game over All done popups__
+- __Game over / All done popups__
 
-  - Corresponding modal will popup and let the user know that the Game is over, the reason for game over and their total score. 
+  - Corresponding modal (after 3 wrong answers or when all questions in a category in exhausted) will popup and let the user know that the Game is over and their total score. 
   - This section gives the user the option to chose to play again or close the modal.
 
 - __Restart__
@@ -182,7 +182,7 @@ ALl user stories and site functionality was tested. Full testing matrix can be f
 
 The site was testes to to ensure consistency across browsers and screen sizen. Full testing matrix can be found [here](miscellaneous/testing_matrix_portfolio-2nd.xlsx)
 
-### Noted bugs
+### Noted unfixed bugs
 
 On mobile and tablet devices (not in Chrome Developer Tools), the following was noted:
 * Category and strike boxes appears off center on <320 px screens. 					
@@ -204,7 +204,7 @@ git commit -m "commit message" - to commit changes to the local repository.
 git push - to push committed changes to the GitHub repository.
 
 ### Local Deployment/Clone
-As described on [GitHub Docs] (https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+As described on [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 1. Navigate to the GitHub Repository main page,
 2. Above the list of files, click the Code drop down menu.
@@ -218,7 +218,7 @@ As described on [GitHub Docs] (https://docs.github.com/en/repositories/creating-
 ### Remote Deployment
 Assuming you have cloned the repository, it is deployed to GitHub Pages through the below steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CeciliaSwe/portfolio-1st)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/CeciliaSwe/portfolio-2nd)
 2. Click the "Setting" button "Settings" Button.
 3. In the left menu, scroll down to "Pages".
 4. Under "Source", click the dropdown and select "Branch: master", then click "Save".
